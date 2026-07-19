@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title_services">SeaLandX | Inspection & Logistics Services</title>
+    <meta name="description" content="Professional container and cargo inspection services — stuffing, lashing, cleaning, disposal, and IICL certified surveys.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-container" id="nav-logo">
+                <img src="assets/images/logo.png" alt="SeaLandX" class="logo-img">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                    <li><a href="services.html" class="nav-link active" data-i18n="nav_services">Services</a></li>
+                    <li><a href="guide.html" class="nav-link" data-i18n="nav_guide">Guide</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="certifications.html" class="nav-link" data-i18n="nav_certifications">Certifications</a></li>
+                    <li><a href="articles.html" class="nav-link" data-i18n="nav_articles">Articles</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <button class="btn-lang" id="lang-toggle" aria-label="Switch Language">العربية</button>
+                <div class="header-cta">
+                    <a href="contact.html" class="btn btn-glowing" data-i18n="btn_request">Request Inspection</a>
+                </div>
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer glass" id="mobile-drawer">
+        <div class="drawer-header">
+            <span class="drawer-title" data-i18n="nav_title">Navigation</span>
+            <button class="close-drawer" id="close-drawer" aria-label="Close Menu">&times;</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <ul>
+                <li><a href="index.html" class="mobile-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="services.html" class="mobile-link" data-i18n="nav_services">Services</a></li>
+                <li><a href="guide.html" class="mobile-link" data-i18n="nav_guide">Guide</a></li>
+                <li><a href="about.html" class="mobile-link" data-i18n="nav_about">About</a></li>
+                <li><a href="certifications.html" class="mobile-link" data-i18n="nav_certifications">Certifications</a></li>
+                <li><a href="articles.html" class="mobile-link" data-i18n="nav_articles">Articles</a></li>
+                <li><a href="contact.html" class="mobile-link" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="drawer-footer">
+            <a href="contact.html" class="btn btn-primary btn-block" data-i18n="btn_request">Request Inspection</a>
+        </div>
+    </div>
+
+    <main>
+        <section id="services-section-wrap" class="video-section">
+            <div class="section-stage">
+                <div class="section-video-wrap">
+                    <video id="threshold-video" class="section-video-bg" muted playsinline preload="none" loop poster="assets/images/02-threshold-approach.jpg">
+                        <source src="assets/video/02-threshold-approach.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay-gradient"></div>
+                </div>
+                <div id="services" class="services-section section-content-layer">
+                    <div class="container">
+                <div class="text-center section-header">
+                    <span class="section-tag glow-green" data-i18n="services_tag">Inspection Standard</span>
+                    <h2 class="section-title" data-i18n="services_title">Professional Verification Services</h2>
+                    <p class="section-desc" data-i18n="services_desc">Our technical experts utilize industry-leading safety protocols, smart logs, and cargo security measures at every gateway.</p>
+                    <a href="services.html" class="btn btn-glowing section-page-link" style="margin-top:1rem;display:inline-flex;align-items:center;gap:0.5rem;">
+                        <span data-i18n="nav_services">View All Services</span> <span style="font-size:1.1em;">→</span>
+                    </a>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <a href="services.html#detail-psi" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(0, 242, 254, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/cargo_inspection.jpg" alt="Container Inspection & Survey Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_psi_title">Pre-Shipment Inspection (PSI)</h3>
+                            <p data-i18n="card_psi_desc">Providing cargo surveyors to inspect quantity, quality, packaging, container sealing, and documentation before custom clearance and vessel dispatch.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_psi_point1">Seal Verification & Locking</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_psi_point2">Cargo Tally & Packing Audits</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_psi_point3">Photo & Video Documentation</span></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="services.html#detail-reefer" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(0, 255, 135, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/hud_inspection.jpg" alt="Reefer Temperature Logs Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00ff87" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    <path d="M12 12h.01M19 12h.01M5 12h.01"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_reefer_title">Reefer Temperature Logs</h3>
+                            <p data-i18n="card_reefer_desc">Verifying active refrigeration unit calibration, humidity levels, temperature history, genset machinery status, and structural isolation.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_reefer_point1">Pre-Trip Inspections (PTI)</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_reefer_point2">Continuous Temp Log Audits</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_reefer_point3">Power Supply & Fan Checks</span></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="services.html#detail-dryvan" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(67, 100, 247, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/cargo_stuffing.jpg" alt="Dry Van Structural Integrity Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#4364f7" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="9" y1="3" x2="9" y2="21"/>
+                                    <line x1="15" y1="3" x2="15" y2="21"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_dry_title">Dry Van Structural Integrity</h3>
+                            <p data-i18n="card_dry_desc">Executing physical and visual surveys to detect light leaks, water ingress, interior structural damage, rust, and mechanical frame distortions.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_dry_point1">7-Point Scanning Protocol</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_dry_point2">Leak and Light Tests</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_dry_point3">Floor & Roof Deformation Surveys</span></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a href="services.html#detail-isotank" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(0, 242, 254, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/cargo_inspection.jpg" alt="ISO Tank Integrity Verification Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
+                                    <ellipse cx="12" cy="12" rx="10" ry="5"/>
+                                    <line x1="12" y1="2" x2="12" y2="22"/>
+                                    <line x1="2" y1="12" x2="22" y2="12"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_tank_title">ISO Tank Integrity Verification</h3>
+                            <p data-i18n="card_tank_desc">Specialized checks for chemical, gas, and food-grade tank containers. Monitoring pressure ratings, valve seals, and cleanliness certificates.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_tank_point1">Valve Sealing & Leak Tests</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_tank_point2">Cleanliness Verification Reports</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_tank_point3">Pressure Relieving Valve Analysis</span></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Card 5 -->
+                    <a href="services.html#detail-lashing" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(0, 255, 135, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/cargo_lashing.jpg" alt="Cargo Lashing & Securing Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00ff87" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_lashing_title">Cargo Lashing & Securing</h3>
+                            <p data-i18n="card_lashing_desc">Inspecting, testing, and certifying container and vessel cargo lashing systems (straps, chains, wire ropes, and twistlocks) to prevent load shifts during maritime transit.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_lashing_point1">Lashing Gear Certifications</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_lashing_point2">Tension Testing & Tie-downs</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_lashing_point3">Heavy Lift Cargo Calculations</span></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Card 6 -->
+                    <a href="services.html#detail-cleaning" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(0, 242, 254, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/container_cleaning.jpg" alt="Empty Container Inspection Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <path d="M9 9h6v6H9z"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_empty_title">Empty Container Inspection</h3>
+                            <p data-i18n="card_empty_desc">Executing strict pre-loading depot checkouts to verify clean floorboards, identify agriculture pests/infestations, detect residual smells, and perform internal light-leak tests.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_empty_point1">Agriculture & Pest Sweep Checks</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_empty_point2">Internal Odor & Chemical Scrub Audits</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_empty_point3">Structural Soundness & Light Leak Tests</span></li>
+                            </ul>
+                        </div>
+                </a>
+                </div><!-- /.services-grid -->
+                </div><!-- /.container -->
+            </div><!-- /.services-section.reveal-layer -->
+            </div><!-- /.visual-stage -->
+        </section><!-- /#services-scroll-section -->
+
+        <!-- Detailed Services Sections -->
+        <section class="services-details-wrap" style="padding: 6rem 0; background: var(--bg-sec);">
+            <div class="container" style="display: flex; flex-direction: column; gap: 4rem;">
+                
+                <!-- Service Detail 1: PSI -->
+                <div id="detail-psi" class="service-detail-block glass reveal-on-scroll" style="padding: 3rem; border-radius: 20px; background: rgba(255,255,255,0.85); border: 1px solid var(--border-glass);">
+                    <div class="detail-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center;">
+                        <div class="detail-visual" style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; border: 1px solid var(--border-glass);">
+                            <img loading="lazy" src="assets/images/cargo_inspection.jpg" alt="PSI Details" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7) contrast(1.1);">
+                            <div class="detail-stats-panel" style="position: absolute; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; padding: 1rem; background: rgba(0,0,0,0.65); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_std">Standards</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">IICL-6 / ISO</span></div>
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_time">Audit Time</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">~1.5 Hours</span></div>
+                            </div>
+                        </div>
+                        <div class="detail-info" style="text-align: start;">
+                            <span class="section-tag glow-teal" data-i18n="srv_psi_title" style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem; display: inline-block; color: var(--neon-teal);">Container Inspection & Survey</span>
+                            <h2 class="detail-section-title" data-i18n="det_psi_title" style="font-size: clamp(1.8rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: -0.01em;">Pre-Shipment Inspection (PSI) in Detail</h2>
+                            <p class="detail-section-desc" data-i18n="det_psi_text" style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">Pre-Shipment Inspection ensures that cargo matches packing lists and conforms to safety regulations before gate-in. Our surveyors perform seal auditing, photo logging, and load tallying.</p>
+                            <ul class="detail-checklist" style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_psi_point1">ISO 17712 Bolt Seal integrity checks</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_psi_point2">Cargo quantity tally and weight audits</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_psi_point3">Detailed photologs of loading process</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" data-i18n="btn_request" style="border-radius: 30px; padding: 0.8rem 2rem; font-weight: 600; font-family: var(--font-heading); text-decoration: none;">Request Inspection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Detail 2: Reefer -->
+                <div id="detail-reefer" class="service-detail-block glass reveal-on-scroll alternate" style="padding: 3rem; border-radius: 20px; background: rgba(255,255,255,0.85); border: 1px solid var(--border-glass);">
+                    <div class="detail-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center;">
+                        <div class="detail-visual" style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; border: 1px solid var(--border-glass); order: 2;">
+                            <img loading="lazy" src="assets/images/hud_inspection.jpg" alt="Reefer Details" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7) contrast(1.1);">
+                            <div class="detail-stats-panel" style="position: absolute; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; padding: 1rem; background: rgba(0,0,0,0.65); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_std">Accreditation</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">PTI Certified</span></div>
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_time">Duration</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">Continuous</span></div>
+                            </div>
+                        </div>
+                        <div class="detail-info" style="text-align: start;">
+                            <span class="section-tag glow-green" data-i18n="srv_reefer_title" style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem; display: inline-block; color: var(--neon-green);">Cargo Inspection & Survey</span>
+                            <h2 class="detail-section-title" data-i18n="det_reefer_title" style="font-size: clamp(1.8rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: -0.01em;">Reefer Temperature & Machinery Audits</h2>
+                            <p class="detail-section-desc" data-i18n="det_reefer_text" style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">Refrigerated cargo requires continuous power and strict climate control. We audit digital temperature logs, run pre-trip inspections (PTI) on compressors, and calibrate humidity sensors.</p>
+                            <ul class="detail-checklist" style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_reefer_point1">Pre-Trip Machinery check (PTI)</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_reefer_point2">Continuous logging of temp history logs</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_reefer_point3">Evaporator and compressor tests</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" data-i18n="btn_request" style="border-radius: 30px; padding: 0.8rem 2rem; font-weight: 600; font-family: var(--font-heading); text-decoration: none;">Request Inspection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Detail 3: Dry Van -->
+                <div id="detail-dryvan" class="service-detail-block glass reveal-on-scroll" style="padding: 3rem; border-radius: 20px; background: rgba(255,255,255,0.85); border: 1px solid var(--border-glass);">
+                    <div class="detail-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center;">
+                        <div class="detail-visual" style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; border: 1px solid var(--border-glass);">
+                            <img loading="lazy" src="assets/images/cargo_stuffing.jpg" alt="Dry Van Details" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7) contrast(1.1);">
+                            <div class="detail-stats-panel" style="position: absolute; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; padding: 1rem; background: rgba(0,0,0,0.65); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_std">Scans</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">7-Point Scan</span></div>
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_time">Audit Time</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">~1.0 Hours</span></div>
+                            </div>
+                        </div>
+                        <div class="detail-info" style="text-align: start;">
+                            <span class="section-tag glow-teal" data-i18n="srv_dry_title" style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem; display: inline-block; color: var(--neon-teal);">Cargo Stuffing</span>
+                            <h2 class="detail-section-title" data-i18n="det_dry_title" style="font-size: clamp(1.8rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: -0.01em;">Dry Van Structural Integrity</h2>
+                            <p class="detail-section-desc" data-i18n="det_dry_text" style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">Dry container structures must protect cargo from moisture and physical shocks. We perform light-leak tests, roof bow inspections, and complete IICL-6 structural checks.</p>
+                            <ul class="detail-checklist" style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_dry_point1">Full IICL-6 structural compliance review</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_dry_point2">Water ingress and light leak scanning</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_dry_point3">Floorboard stress testing</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" data-i18n="btn_request" style="border-radius: 30px; padding: 0.8rem 2rem; font-weight: 600; font-family: var(--font-heading); text-decoration: none;">Request Inspection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Detail 4: ISO Tank -->
+                <div id="detail-isotank" class="service-detail-block glass reveal-on-scroll alternate" style="padding: 3rem; border-radius: 20px; background: rgba(255,255,255,0.85); border: 1px solid var(--border-glass);">
+                    <div class="detail-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center;">
+                        <div class="detail-visual" style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; border: 1px solid var(--border-glass); order: 2;">
+                            <img loading="lazy" src="assets/images/cargo_inspection.jpg" alt="ISO Tank Details" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7) contrast(1.1);">
+                            <div class="detail-stats-panel" style="position: absolute; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; padding: 1rem; background: rgba(0,0,0,0.65); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_std">Pressure</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">Valve Audited</span></div>
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_time">Duration</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">~2.0 Hours</span></div>
+                            </div>
+                        </div>
+                        <div class="detail-info" style="text-align: start;">
+                            <span class="section-tag glow-green" data-i18n="srv_tank_title" style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem; display: inline-block; color: var(--neon-green);">Cargo Lashing</span>
+                            <h2 class="detail-section-title" data-i18n="det_tank_title" style="font-size: clamp(1.8rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: -0.01em;">ISO Tank Integrity Verification</h2>
+                            <p class="detail-section-desc" data-i18n="det_tank_text" style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">ISO Tanks carrying gases or liquid chemicals require extreme containment security. We perform pressure valve inspections, clean certifications, and seal checks.</p>
+                            <ul class="detail-checklist" style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_tank_point1">Valve seal pressure ratings test</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_tank_point2">Accredited cleanliness certificates review</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_tank_point3">Exterior frame integrity surveys</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" data-i18n="btn_request" style="border-radius: 30px; padding: 0.8rem 2rem; font-weight: 600; font-family: var(--font-heading); text-decoration: none;">Request Inspection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Detail 5: Lashing -->
+                <div id="detail-lashing" class="service-detail-block glass reveal-on-scroll" style="padding: 3rem; border-radius: 20px; background: rgba(255,255,255,0.85); border: 1px solid var(--border-glass);">
+                    <div class="detail-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center;">
+                        <div class="detail-visual" style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; border: 1px solid var(--border-glass);">
+                            <img loading="lazy" src="assets/images/cargo_lashing.jpg" alt="Lashing Details" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7) contrast(1.1);">
+                            <div class="detail-stats-panel" style="position: absolute; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; padding: 1rem; background: rgba(0,0,0,0.65); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_std">Safety</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">Tension Audited</span></div>
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_time">Audit Time</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">~2.0 Hours</span></div>
+                            </div>
+                        </div>
+                        <div class="detail-info" style="text-align: start;">
+                            <span class="section-tag glow-teal" data-i18n="srv_lashing_title" style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem; display: inline-block; color: var(--neon-teal);">Cargo Lashing & Securing</span>
+                            <h2 class="detail-section-title" data-i18n="det_lashing_title" style="font-size: clamp(1.8rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: -0.01em;">Cargo Lashing & Securing</h2>
+                            <p class="detail-section-desc" data-i18n="det_lashing_text" style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">Cargo shift during heavy sea transit is a major maritime risk. We calculate load tension, inspect steel tie-downs, and verify twistlock locking systems on flat racks.</p>
+                            <ul class="detail-checklist" style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_lashing_point1">Steel chain and wire tension testing</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_lashing_point2">Heavy lift load weight calculations</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_lashing_point3">Flat rack twistlock checks</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" data-i18n="btn_request" style="border-radius: 30px; padding: 0.8rem 2rem; font-weight: 600; font-family: var(--font-heading); text-decoration: none;">Request Inspection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Detail 6: Cleaning -->
+                <div id="detail-cleaning" class="service-detail-block glass reveal-on-scroll alternate" style="padding: 3rem; border-radius: 20px; background: rgba(255,255,255,0.85); border: 1px solid var(--border-glass);">
+                    <div class="detail-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center;">
+                        <div class="detail-visual" style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; border: 1px solid var(--border-glass); order: 2;">
+                            <img loading="lazy" src="assets/images/container_cleaning.jpg" alt="Cleaning Details" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7) contrast(1.1);">
+                            <div class="detail-stats-panel" style="position: absolute; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; padding: 1rem; background: rgba(0,0,0,0.65); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_std">Sanitary</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">Pest Free</span></div>
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_time">Duration</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">~1.0 Hours</span></div>
+                            </div>
+                        </div>
+                        <div class="detail-info" style="text-align: start;">
+                            <span class="section-tag glow-green" data-i18n="srv_empty_title" style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem; display: inline-block; color: var(--neon-green);">Container Cleaning</span>
+                            <h2 class="detail-section-title" data-i18n="det_cleaning_title" style="font-size: clamp(1.8rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: -0.01em;">Empty Container Inspections</h2>
+                            <p class="detail-section-desc" data-i18n="det_cleaning_text" style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">Before cargo stuffing, empty containers must be clean, odorless, and free from pests. We perform sanitary verification, pest scans, and cleaning certificate audits.</p>
+                            <ul class="detail-checklist" style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_cleaning_point1">Agricultural pest and insect scanning</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_cleaning_point2">Chemical odor testing and venting</span></li>
+                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_cleaning_point3">Sanitary wash verification reports</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" data-i18n="btn_request" style="border-radius: 30px; padding: 0.8rem 2rem; font-weight: 600; font-family: var(--font-heading); text-decoration: none;">Request Inspection</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-col-brand">
+                    <a href="index.html" class="logo-container">
+                        <img src="assets/images/logo.png" alt="SeaLandX" class="logo-img footer-logo-img">
+                    </a>
+                    <p class="brand-desc" data-i18n="footer_brand_desc">Globally trusted marine cargo surveys, container seal audits, and logistics security assessments.</p>
+                </div>
+                <div class="footer-col-links">
+                    <h4 data-i18n="footer_col1_header">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"         data-i18n="nav_home">Home</a></li>
+                        <li><a href="services.html"      data-i18n="nav_services">Services</a></li>
+                        <li><a href="guide.html"         data-i18n="nav_guide">7-Point Guide</a></li>
+                        <li><a href="about.html"         data-i18n="nav_about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-links">
+                    <h4 data-i18n="footer_col2_header">Certifications</h4>
+                    <ul>
+                        <li><a href="services.html" data-i18n="cert_iicl">IICL Container Inspections</a></li>
+                        <li><a href="services.html" data-i18n="cert_iso">ISO 668 &amp; 1496 Audits</a></li>
+                        <li><a href="certifications.html" data-i18n="cert_psi">Pre-Shipment Inspections</a></li>
+                        <li><a href="certifications.html" data-i18n="cert_reefer">Reefer Cold Chain Logs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-news">
+                    <h4 data-i18n="footer_col3_header">Logistics Bulletins</h4>
+                    <p data-i18n="footer_news_desc">Subscribe to receive regulatory safety updates directly in your inbox.</p>
+                    <form class="footer-news-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" placeholder="email@company.com" data-i18n-placeholder="footer_news_ph" required>
+                        <button type="submit" class="btn btn-primary" data-i18n="footer_news_btn">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SeaLandX. <span data-i18n="footer_copyright">All rights reserved.</span></p>
+                <div class="footer-legal">
+                    <a href="index.html" data-i18n="footer_privacy">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="index.html" data-i18n="footer_terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="cert-modal" class="cert-modal" onclick="closeCertModal()">
+        <span class="cert-modal-close" onclick="closeCertModal()">&times;</span>
+        <div class="cert-modal-content" onclick="event.stopPropagation()">
+            <img loading="lazy" id="cert-modal-img" src="" alt="ISO Certification Preview">
+        </div>
+    </div>
+
+    <!-- Article Modal -->
+    <div id="article-modal" class="article-modal" onclick="closeArticleModal()">
+        <div class="article-modal-content" onclick="event.stopPropagation()">
+            <span class="article-modal-close" onclick="closeArticleModal()">&times;</span>
+            <div class="article-modal-body">
+                <span class="article-modal-tag" id="art-modal-tag">Category</span>
+                <span class="article-modal-date" id="art-modal-date">Date</span>
+                <h2 class="article-modal-title" id="art-modal-title">Title</h2>
+                <div class="article-modal-text" id="art-modal-text"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="demo-indicator" class="demo-indicator-bar"></div>
+    <div id="demo-badge" class="demo-active-badge">DEMO MODE ACTIVE</div>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

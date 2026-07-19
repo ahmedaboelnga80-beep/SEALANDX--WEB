@@ -1,0 +1,17 @@
+# Large raw assets
+assets/video/*-raw.mp4
+
+# Executable binaries
+bin/
+
+# Temporary scratch and setup scripts
+scratch/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# System files
+.DS_Store
+Thumbs.db

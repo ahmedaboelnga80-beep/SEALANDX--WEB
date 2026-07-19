@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">SeaLandX | Premium Container Inspection & Maritime Logistics</title>
+    <meta name="description" content="Professional container inspection services. Premium marine cargo survey, 7-point structural checks, reefer temperature log verification, and ISO tank certifications.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-container" id="nav-logo">
+                <img src="assets/images/logo.png" alt="SeaLandX" class="logo-img">
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="services.html" class="nav-link" data-i18n="nav_services">Services</a></li>
+                    <li><a href="guide.html" class="nav-link" data-i18n="nav_guide">7-Point Guide</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="certifications.html" class="nav-link" data-i18n="nav_certifications">Certifications</a></li>
+                    <li><a href="articles.html" class="nav-link" data-i18n="nav_articles">Articles</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <!-- Language Toggle Button -->
+                <button class="btn-lang" id="lang-toggle" aria-label="Switch Language">العربية</button>
+                <div class="header-cta">
+                    <a href="contact.html" class="btn btn-glowing" data-i18n="btn_request">Request Inspection</a>
+                </div>
+                <!-- Mobile Burger Button -->
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Sidebar Navigation -->
+    <div class="mobile-drawer glass" id="mobile-drawer">
+        <div class="drawer-header">
+            <span class="drawer-title" data-i18n="nav_title">Navigation</span>
+            <button class="close-drawer" id="close-drawer" aria-label="Close Menu">&times;</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <ul>
+                <li><a href="index.html" class="mobile-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="services.html" class="mobile-link" data-i18n="nav_services">Services</a></li>
+                <li><a href="guide.html" class="mobile-link" data-i18n="nav_guide">7-Point Guide</a></li>
+                <li><a href="about.html" class="mobile-link" data-i18n="nav_about">About Us</a></li>
+                <li><a href="certifications.html" class="mobile-link" data-i18n="nav_certifications">Certifications</a></li>
+                <li><a href="articles.html" class="mobile-link" data-i18n="nav_articles">Articles</a></li>
+                <li><a href="contact.html" class="mobile-link" data-i18n="nav_contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="drawer-footer">
+            <a href="contact.html" class="btn btn-primary btn-block" data-i18n="btn_request">Request Inspection</a>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main>
+
+        <!-- Hero & Services Interactive Split Section (Home) -->
+        <section id="home" class="hero-section">
+            <video id="hero-video-bg" class="hero-video-bg" autoplay loop muted playsinline preload="metadata" poster="assets/images/01-hero-environment.jpg">
+                <source src="assets/video/01-hero-environment.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay-gradient"></div>
+            <div class="container hero-container">
+                <div class="hero-grid">
+                    
+                    <!-- Left: Vertical Services Dashboard -->
+                    <div class="hero-dashboard-left">
+                        <span class="section-tag glow-teal" data-i18n="hero_tag">Marine Security Terminal</span>
+                        <h1 class="hero-title" data-i18n="hero_title">Precision Container <br><span class="text-gradient">Inspection</span></h1>
+                        <p class="hero-desc" data-i18n="hero_desc">Guarantee cargo safety, structural integrity, and custom compliance at international shipping ports through advanced diagnostic surveys.</p>
+                        
+                        <div class="services-vertical-menu">
+                            
+                            <!-- Item 1 -->
+                            <a href="services.html#detail-psi" class="service-menu-item active" data-service="pre-shipment" style="text-decoration:none;display:flex;">
+                                <div class="item-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <h3 data-i18n="srv_psi_title">Pre-Shipment Inspection (PSI)</h3>
+                                    <p data-i18n="srv_psi_desc">Comprehensive pre-loading verification and container sealing.</p>
+                                </div>
+                                <div class="active-indicator"></div>
+                            </a>
+
+                            <!-- Item 2 -->
+                            <a href="services.html#detail-reefer" class="service-menu-item" data-service="reefer" style="text-decoration:none;display:flex;">
+                                <div class="item-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon">
+                                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                        <path d="M12 12h.01M19 12h.01M5 12h.01"/>
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <h3 data-i18n="srv_reefer_title">Reefer Yard Verification</h3>
+                                    <p data-i18n="srv_reefer_desc">Cold chain analysis, machinery test, and sensor logs.</p>
+                                </div>
+                                <div class="active-indicator"></div>
+                            </a>
+
+                            <!-- Item 3 -->
+                            <a href="services.html#detail-dryvan" class="service-menu-item" data-service="dry-van" style="text-decoration:none;display:flex;">
+                                <div class="item-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="9" y1="3" x2="9" y2="21"/>
+                                        <line x1="15" y1="3" x2="15" y2="21"/>
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <h3 data-i18n="srv_dry_title">Dry Van Structural Scan</h3>
+                                    <p data-i18n="srv_dry_desc">Full 7-point structural evaluation and wall integrity tests.</p>
+                                </div>
+                                <div class="active-indicator"></div>
+                            </a>
+
+                            <!-- Item 4 -->
+                            <a href="services.html#detail-isotank" class="service-menu-item" data-service="iso-tank" style="text-decoration:none;display:flex;">
+                                <div class="item-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon">
+                                        <ellipse cx="12" cy="12" rx="10" ry="5"/>
+                                        <line x1="12" y1="2" x2="12" y2="22"/>
+                                        <line x1="2" y1="12" x2="22" y2="12"/>
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <h3 data-i18n="srv_tank_title">ISO Tank Certification</h3>
+                                    <p data-i18n="srv_tank_desc">Valve tests, clean certifications, and safety seals.</p>
+                                </div>
+                                <div class="active-indicator"></div>
+                            </a>
+
+                            <!-- Item 5 -->
+                            <a href="services.html#detail-lashing" class="service-menu-item" data-service="lashing" style="text-decoration:none;display:flex;">
+                                <div class="item-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <h3 data-i18n="srv_lashing_title">Cargo Lashing & Securing</h3>
+                                    <p data-i18n="srv_lashing_desc">Securing heavy cargo on containers, flat racks, and vessel bays.</p>
+                                </div>
+                                <div class="active-indicator"></div>
+                            </a>
+
+                            <!-- Item 6 -->
+                            <a href="services.html#detail-cleaning" class="service-menu-item" data-service="empty-container" style="text-decoration:none;display:flex;">
+                                <div class="item-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <path d="M9 9h6v6H9z"/>
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <h3 data-i18n="srv_empty_title">Empty Container Inspection</h3>
+                                    <p data-i18n="srv_empty_desc">Inspection for agricultural pests, odors, leaks, and structural compliance.</p>
+                                </div>
+                                <div class="active-indicator"></div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Right: Services Image Showcase -->
+                    <div class="hero-dashboard-right">
+                        <div class="showcase-container glass">
+                            <div class="showcase-wrapper">
+                                <!-- Background Service Images -->
+                                <img loading="lazy" src="assets/images/cargo_inspection.jpg" id="bg-pre-shipment" class="showcase-image active" alt="Container Inspection & Survey">
+                                <img loading="lazy" src="assets/images/hud_inspection.jpg" id="bg-reefer" class="showcase-image" alt="Reefer Temperature Logs">
+                                <img loading="lazy" src="assets/images/cargo_stuffing.jpg" id="bg-dry-van" class="showcase-image" alt="Dry Van Structural Integrity">
+                                <img loading="lazy" src="assets/images/cargo_inspection.jpg" id="bg-iso-tank" class="showcase-image" alt="ISO Tank Inspection">
+                                <img loading="lazy" src="assets/images/cargo_lashing.jpg" id="bg-lashing" class="showcase-image" alt="Cargo Lashing & Securing">
+                                <img loading="lazy" src="assets/images/container_cleaning.jpg" id="bg-empty-container" class="showcase-image" alt="Empty Container Inspection">
+                                
+                                <!-- Elegant Text Caption Overlay -->
+                                <div class="showcase-caption-overlay">
+                                    <span id="showcase-caption" data-i18n="srv_psi_title">Container Inspection & Survey</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="hero-wave-divider">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 32L60 48C120 64 240 96 360 101.3C480 107 600 85 720 64C840 43 960 21 1080 21.3C1200 21 1320 43 1380 53.3L1440 64V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V32Z" fill="var(--bg-sec)"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Services Detailed Section -->
+        <section id="services-section-wrap" class="video-section">
+            <div class="section-stage">
+                <div class="section-video-wrap">
+                    <video id="threshold-video" class="section-video-bg" muted playsinline preload="none" loop poster="assets/images/02-threshold-approach.jpg">
+                        <source src="assets/video/02-threshold-approach.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay-gradient"></div>
+                </div>
+                <div id="services" class="services-section section-content-layer">
+                    <div class="container">
+                <div class="text-center section-header">
+                    <span class="section-tag glow-green" data-i18n="services_tag">Inspection Standard</span>
+                    <h2 class="section-title" data-i18n="services_title">Professional Verification Services</h2>
+                    <p class="section-desc" data-i18n="services_desc">Our technical experts utilize industry-leading safety protocols, smart logs, and cargo security measures at every gateway.</p>
+                    <a href="services.html" class="btn btn-glowing section-page-link" style="margin-top:1rem;display:inline-flex;align-items:center;gap:0.5rem;">
+                        <span data-i18n="nav_services">View All Services</span> <span style="font-size:1.1em;">→</span>
+                    </a>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <a href="services.html#detail-psi" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(0, 242, 254, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/cargo_inspection.jpg" alt="Container Inspection & Survey Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_psi_title">Pre-Shipment Inspection (PSI)</h3>
+                            <p data-i18n="card_psi_desc">Providing cargo surveyors to inspect quantity, quality, packaging, container sealing, and documentation before custom clearance and vessel dispatch.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_psi_point1">Seal Verification & Locking</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_psi_point2">Cargo Tally & Packing Audits</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_psi_point3">Photo & Video Documentation</span></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="services.html#detail-reefer" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(0, 255, 135, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/hud_inspection.jpg" alt="Reefer Temperature Logs Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00ff87" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    <path d="M12 12h.01M19 12h.01M5 12h.01"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_reefer_title">Reefer Temperature Logs</h3>
+                            <p data-i18n="card_reefer_desc">Verifying active refrigeration unit calibration, humidity levels, temperature history, genset machinery status, and structural isolation.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_reefer_point1">Pre-Trip Inspections (PTI)</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_reefer_point2">Continuous Temp Log Audits</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_reefer_point3">Power Supply & Fan Checks</span></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="services.html#detail-dryvan" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(67, 100, 247, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/cargo_stuffing.jpg" alt="Dry Van Structural Integrity Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#4364f7" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="9" y1="3" x2="9" y2="21"/>
+                                    <line x1="15" y1="3" x2="15" y2="21"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_dry_title">Dry Van Structural Integrity</h3>
+                            <p data-i18n="card_dry_desc">Executing physical and visual surveys to detect light leaks, water ingress, interior structural damage, rust, and mechanical frame distortions.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_dry_point1">7-Point Scanning Protocol</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_dry_point2">Leak and Light Tests</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_dry_point3">Floor & Roof Deformation Surveys</span></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a href="services.html#detail-isotank" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(0, 242, 254, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/cargo_inspection.jpg" alt="ISO Tank Integrity Verification Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
+                                    <ellipse cx="12" cy="12" rx="10" ry="5"/>
+                                    <line x1="12" y1="2" x2="12" y2="22"/>
+                                    <line x1="2" y1="12" x2="22" y2="12"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_tank_title">ISO Tank Integrity Verification</h3>
+                            <p data-i18n="card_tank_desc">Specialized checks for chemical, gas, and food-grade tank containers. Monitoring pressure ratings, valve seals, and cleanliness certificates.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_tank_point1">Valve Sealing & Leak Tests</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_tank_point2">Cleanliness Verification Reports</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_tank_point3">Pressure Relieving Valve Analysis</span></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Card 5 -->
+                    <a href="services.html#detail-lashing" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(0, 255, 135, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/cargo_lashing.jpg" alt="Cargo Lashing & Securing Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00ff87" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_lashing_title">Cargo Lashing & Securing</h3>
+                            <p data-i18n="card_lashing_desc">Inspecting, testing, and certifying container and vessel cargo lashing systems (straps, chains, wire ropes, and twistlocks) to prevent load shifts during maritime transit.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_lashing_point1">Lashing Gear Certifications</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_lashing_point2">Tension Testing & Tie-downs</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_lashing_point3">Heavy Lift Cargo Calculations</span></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Card 6 -->
+                    <a href="services.html#detail-cleaning" class="service-card glass" style="text-decoration:none;color:inherit;display:block;">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at top right, rgba(0, 242, 254, 0.15), transparent 70%);"></div>
+                        <div class="card-image-wrapper">
+                            <img loading="lazy" src="assets/images/container_cleaning.jpg" alt="Empty Container Inspection Visual" class="card-img-header">
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <path d="M9 9h6v6H9z"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="srv_empty_title">Empty Container Inspection</h3>
+                            <p data-i18n="card_empty_desc">Executing strict pre-loading depot checkouts to verify clean floorboards, identify agriculture pests/infestations, detect residual smells, and perform internal light-leak tests.</p>
+                            <ul class="card-list">
+                                <li><span class="list-bullet"></span><span data-i18n="card_empty_point1">Agriculture & Pest Sweep Checks</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_empty_point2">Internal Odor & Chemical Scrub Audits</span></li>
+                                <li><span class="list-bullet"></span><span data-i18n="card_empty_point3">Structural Soundness & Light Leak Tests</span></li>
+                            </ul>
+                        </div>
+                </a>
+                </div><!-- /.services-grid -->
+                </div><!-- /.container -->
+            </div><!-- /.services-section.reveal-layer -->
+            </div><!-- /.visual-stage -->
+        </section><!-- /#services-scroll-section -->
+
+        <!-- Interactive 7-Point Inspection Blueprint Section -->
+        <section id="guide-section-wrap" class="video-section">
+            <div class="section-stage">
+                <div class="section-video-wrap">
+                    <video id="material-video" class="section-video-bg" muted playsinline preload="none" loop poster="assets/images/03-material-study.jpg">
+                        <source src="assets/video/03-material-study.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay-gradient"></div>
+                </div>
+                <div id="inspection-guide" class="guide-section section-content-layer">
+                    <div class="container">
+                <div class="text-center section-header">
+                    <span class="section-tag glow-teal" data-i18n="guide_tag">Interactive Standard</span>
+                    <h2 class="section-title" data-i18n="guide_title">The 7-Point Container Inspection</h2>
+                    <p class="section-desc" data-i18n="guide_desc">Click or hover over the highlighted checkpoints on the container blueprint to explore the standard maritime inspection points.</p>
+                    <a href="guide.html" class="btn btn-glowing section-page-link" style="margin-top:1rem;display:inline-flex;align-items:center;gap:0.5rem;">
+                        <span data-i18n="nav_guide">Open Full Guide</span> <span style="font-size:1.1em;">→</span>
+                    </a>
+                </div>
+
+                <div class="guide-wrapper glass">
+                    <!-- Blueprint Visual Left -->
+                    <div class="blueprint-container">
+                        <svg class="container-blueprint-svg" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Cargo Container Isometric Outline -->
+                            <path d="M120 320 L120 140 L280 90 L280 270 Z" fill="rgba(0, 242, 254, 0.03)" stroke="rgba(0, 242, 254, 0.2)" stroke-width="2" />
+                            <path d="M280 90 L680 150 L680 330 L280 270 Z" fill="rgba(0, 242, 254, 0.05)" stroke="rgba(0, 242, 254, 0.3)" stroke-width="2" />
+                            <path d="M120 140 L280 90 L680 150 L520 200 Z" fill="rgba(0, 242, 254, 0.02)" stroke="rgba(0, 242, 254, 0.15)" stroke-width="2" />
+                            <path d="M120 320 L280 270 L680 330" stroke="rgba(0, 242, 254, 0.2)" stroke-width="1.5" stroke-dasharray="4 4" />
+                            
+                            <!-- Detailed corrugated lines -->
+                            <line x1="330" y1="102" x2="330" y2="280" stroke="rgba(0, 242, 254, 0.15)" />
+                            <line x1="380" y1="110" x2="380" y2="287" stroke="rgba(0, 242, 254, 0.15)" />
+                            <line x1="430" y1="117" x2="430" y2="295" stroke="rgba(0, 242, 254, 0.15)" />
+                            <line x1="480" y1="125" x2="480" y2="302" stroke="rgba(0, 242, 254, 0.15)" />
+                            <line x1="530" y1="132" x2="530" y2="310" stroke="rgba(0, 242, 254, 0.15)" />
+                            <line x1="580" y1="140" x2="580" y2="317" stroke="rgba(0, 242, 254, 0.15)" />
+                            <line x1="630" y1="147" x2="630" y2="325" stroke="rgba(0, 242, 254, 0.15)" />
+
+                            <!-- Doors detailing on front -->
+                            <line x1="200" y1="115" x2="200" y2="295" stroke="rgba(0, 242, 254, 0.2)" stroke-width="1.5" />
+                            <circle cx="200" cy="180" r="3" fill="#00f2fe" />
+                            <circle cx="200" cy="220" r="3" fill="#00f2fe" />
+
+                            <!-- Interactive HOTSPOTS -->
+                            <!-- Point 1: Doors -->
+                            <g class="blueprint-hotspot active" data-point="1" transform="translate(160, 200)" tabindex="0" role="button" aria-label="Checkpoint 1: Outside and Inside Doors">
+                                <circle class="hotspot-pulse" r="18" fill="rgba(0, 242, 254, 0.2)" />
+                                <circle class="hotspot-core" r="8" fill="#00f2fe" />
+                                <text class="hotspot-text" y="4" text-anchor="middle" font-size="11" font-weight="bold" fill="#06090e">1</text>
+                            </g>
+
+                            <!-- Point 2: Left Side -->
+                            <g class="blueprint-hotspot" data-point="2" transform="translate(480, 260)" tabindex="0" role="button" aria-label="Checkpoint 2: Left Side Wall">
+                                <circle class="hotspot-pulse" r="18" fill="rgba(0, 242, 254, 0.2)" />
+                                <circle class="hotspot-core" r="8" fill="#00f2fe" />
+                                <text class="hotspot-text" y="4" text-anchor="middle" font-size="11" font-weight="bold" fill="#06090e">2</text>
+                            </g>
+
+                            <!-- Point 3: Right Side -->
+                            <g class="blueprint-hotspot" data-point="3" transform="translate(380, 160)" tabindex="0" role="button" aria-label="Checkpoint 3: Right Side Wall">
+                                <circle class="hotspot-pulse" r="18" fill="rgba(0, 242, 254, 0.2)" />
+                                <circle class="hotspot-core" r="8" fill="#00f2fe" />
+                                <text class="hotspot-text" y="4" text-anchor="middle" font-size="11" font-weight="bold" fill="#06090e">3</text>
+                            </g>
+
+                            <!-- Point 4: Front Wall -->
+                            <g class="blueprint-hotspot" data-point="4" transform="translate(650, 220)" tabindex="0" role="button" aria-label="Checkpoint 4: Front Wall">
+                                <circle class="hotspot-pulse" r="18" fill="rgba(0, 242, 254, 0.2)" />
+                                <circle class="hotspot-core" r="8" fill="#00f2fe" />
+                                <text class="hotspot-text" y="4" text-anchor="middle" font-size="11" font-weight="bold" fill="#06090e">4</text>
+                            </g>
+
+                            <!-- Point 5: Ceiling / Roof -->
+                            <g class="blueprint-hotspot" data-point="5" transform="translate(390, 100)" tabindex="0" role="button" aria-label="Checkpoint 5: Ceiling and Roof">
+                                <circle class="hotspot-pulse" r="18" fill="rgba(0, 242, 254, 0.2)" />
+                                <circle class="hotspot-core" r="8" fill="#00f2fe" />
+                                <text class="hotspot-text" y="4" text-anchor="middle" font-size="11" font-weight="bold" fill="#06090e">5</text>
+                            </g>
+
+                            <!-- Point 6: Floor -->
+                            <g class="blueprint-hotspot" data-point="6" transform="translate(320, 230)" tabindex="0" role="button" aria-label="Checkpoint 6: Internal Floor">
+                                <circle class="hotspot-pulse" r="18" fill="rgba(0, 242, 254, 0.2)" />
+                                <circle class="hotspot-core" r="8" fill="#00f2fe" />
+                                <text class="hotspot-text" y="4" text-anchor="middle" font-size="11" font-weight="bold" fill="#06090e">6</text>
+                            </g>
+
+                            <!-- Point 7: Undercarriage -->
+                            <g class="blueprint-hotspot" data-point="7" transform="translate(480, 340)" tabindex="0" role="button" aria-label="Checkpoint 7: Undercarriage and Frame">
+                                <circle class="hotspot-pulse" r="18" fill="rgba(0, 242, 254, 0.2)" />
+                                <circle class="hotspot-core" r="8" fill="#00f2fe" />
+                                <text class="hotspot-text" y="4" text-anchor="middle" font-size="11" font-weight="bold" fill="#06090e">7</text>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Details Panel Right -->
+                    <div class="blueprint-info-panel">
+                        <div id="blueprint-content-box">
+                            <span class="info-num" id="info-point-num">01</span>
+                            <h3 class="info-title" id="info-point-title" data-i18n="bp_title_1">Inside / Outside Doors</h3>
+                            <div class="info-status-badge"><span class="badge-dot green"></span> <span data-i18n="bp_status_secure">SECURE ELEMENT</span></div>
+                            <p class="info-desc" id="info-point-desc" data-i18n="bp_desc_1">Inspect lock rods, handles, and keepers for secure locking. Look for loose bolts or welds. Check rubber door gaskets for weather-tight sealing and verify that the shipping container security seal matches customs logs exactly.</p>
+                            
+                            <div class="info-checklist-box">
+                                <h4 data-i18n="bp_checklist_header">Inspection Checklist:</h4>
+                                <ul class="info-checklist" id="info-point-checklist">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.container -->
+            </div><!-- /.guide-section.reveal-layer -->
+            </div><!-- /.visual-stage -->
+        </section><!-- /#guide-scroll-section -->
+
+        <!-- About Us & Stats Section -->
+        <section id="about-section-wrap" class="video-section">
+            <div class="section-stage">
+                <div class="section-video-wrap">
+                    <video id="pressure-video" class="section-video-bg" muted playsinline preload="none" loop poster="assets/images/04-pressure-sequence.jpg">
+                        <source src="assets/video/04-pressure-sequence.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay-gradient"></div>
+                </div>
+                <div id="about" class="about-section section-content-layer">
+                    <div class="container">
+                <div class="about-grid">
+                    <!-- Left: Graphic / Text content -->
+                    <div class="about-text-content">
+                        <span class="section-tag glow-green" data-i18n="about_tag">Global Network</span>
+                        <h2 class="section-title" data-i18n="about_title">Securing International Shipping Channels</h2>
+                        <p class="about-lead" data-i18n="about_lead">SeaLandX stands at the forefront of maritime cargo safety. We coordinate with port authorities, custom agents, and container terminals to certify structural security and regulatory compliance.</p>
+                        <p class="about-body" data-i18n="about_body">Our network of marine cargo surveyors handles all inspection phases at major shipping corridors. Using physical, mechanical, and visual inspection standards, we minimize transit delays, container damage, and cargo liability claims for shipping lines, exporters, and forwarders.</p>
+                        
+                        <div class="about-features">
+                            <div class="feat-item">
+                                <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#00ff87" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                <div>
+                                    <h4 data-i18n="about_feat1_title">Certified Surveys</h4>
+                                    <p data-i18n="about_feat1_desc">Surveys conducted under international ISO & IICL guidelines.</p>
+                                </div>
+                            </div>
+                            <div class="feat-item">
+                                <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#00ff87" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                <div>
+                                    <h4 data-i18n="about_feat2_title">Instant Reports</h4>
+                                    <p data-i18n="about_feat2_desc">Cloud inspection logs and digital photos delivered in real-time.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-glowing section-page-link" style="margin-top:1rem;display:inline-flex;align-items:center;gap:0.5rem;">
+                            <span data-i18n="nav_about">About SeaLandX</span> <span style="font-size:1.1em;">→</span>
+                        </a>
+                    </div>
+
+                    <!-- Right: Stats Counter Box & 3D Container visual -->
+                    <div class="about-right-panel">
+                        <div class="about-visual-wrapper glass">
+                            <img loading="lazy" src="assets/images/about_welcome.jpg" alt="SeaLandX Global Logistics Operations" class="about-container-image">
+                        </div>
+                        
+                        <div class="stats-card glass">
+                            <div class="stat-item">
+                                <div class="stat-number text-gradient" data-target="15240">0</div>
+                                <div class="stat-label" data-i18n="stat_containers">Containers Inspected</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number text-gradient" data-target="24">0</div>
+                                <div class="stat-label" data-i18n="stat_hours">Hour Support Coverage</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number text-gradient" data-target="100">0</div>
+                                <div class="stat-label" data-i18n="stat_compliance">% Safety Compliance</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number text-gradient" data-target="35">0</div>
+                                <div class="stat-label" data-i18n="stat_ports">Major Ports Covered</div>
+                            </div>
+                        </div><!-- /.stats-card -->
+                    </div><!-- /.about-right-panel -->
+                </div><!-- /.about-grid -->
+                </div><!-- /.container -->
+            </div><!-- /.about-section .reveal-layer -->
+            </div><!-- /.visual-stage -->
+        </section><!-- /#about-scroll-section -->
+
+
+        <!-- Chapter 5: Rupture Interactive Canvas -->
+        <section id="rupture-section-wrap" class="video-section rupture-section">
+            <div class="section-stage">
+                <div class="container section-content-layer">
+                    <div class="rupture-grid">
+                        <div class="rupture-left">
+                            <span class="section-tag glow-teal" data-i18n="rupture_tag">X-Ray Scan System</span>
+                            <h2 class="section-title" data-i18n="rupture_title">Molecular Integrity Scan</h2>
+                            <p class="section-desc" data-i18n="rupture_desc">Interactive molecular scan of high-security container steel. The particle array shows the structure deformation and integrity confidence. Hover to disturb the particle field.</p>
+                            <div class="rupture-stats">
+                                <div class="r-stat">
+                                    <span class="r-label">INTEGRITY</span>
+                                    <span class="r-val neon-teal">99.84%</span>
+                                </div>
+                                <div class="r-stat">
+                                    <span class="r-label">SCAN FIELD</span>
+                                    <span class="r-val neon-green">ACTIVE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rupture-right">
+                            <div class="canvas-wrap glass">
+                                <canvas id="rupture-canvas"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ISO Certifications Section -->
+        <section id="certifications-section-wrap" class="video-section">
+            <div class="section-stage">
+                <div class="section-video-wrap">
+                    <video id="evidence-video" class="section-video-bg" muted playsinline preload="none" loop poster="assets/images/05-evidence-resolution.jpg">
+                        <source src="assets/video/05-evidence-resolution.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay-gradient"></div>
+                </div>
+                <div id="certifications" class="certifications-section section-content-layer">
+                    <div class="container">
+                <div class="text-center section-header">
+                    <span class="section-tag glow-green" data-i18n="cert_tag">Compliance & Quality</span>
+                    <h2 class="section-title" data-i18n="cert_title">ISO Certified Logistics Services</h2>
+                    <p class="section-desc" data-i18n="cert_desc">SeaLandX operates under strict international standards to ensure quality, environmental safety, and occupational health across all logistics channels.</p>
+                    <a href="certifications.html" class="btn btn-glowing section-page-link" style="margin-top:1rem;display:inline-flex;align-items:center;gap:0.5rem;">
+                        <span data-i18n="nav_certifications">View Certifications</span> <span style="font-size:1.1em;">→</span>
+                    </a>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Certificate 1: ISO 9001 -->
+                    <div class="cert-card glass" onclick="window.location='certifications.html'; return false;" data-cert-img="assets/images/iso_9001.jpg"">
+                        <div class="cert-img-wrapper">
+                            <img loading="lazy" src="assets/images/iso_9001.jpg" alt="ISO 9001:2015 Certification" class="cert-img">
+                            <div class="cert-overlay">
+                                <span class="zoom-icon">🔍</span>
+                                <span data-i18n="cert_click_view">Click to View Certificate</span>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-badge">ISO 9001:2015</div>
+                            <h3 data-i18n="cert_9001_title">Quality Management System (QMS)</h3>
+                            <p data-i18n="cert_9001_desc">Standardizes processes to consistently deliver services that meet customer expectations and regulatory requirements.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2: ISO 14001 -->
+                    <div class="cert-card glass" onclick="window.location='certifications.html'; return false;" data-cert-img="assets/images/iso_14001.jpg"">
+                        <div class="cert-img-wrapper">
+                            <img loading="lazy" src="assets/images/iso_14001.jpg" alt="ISO 14001:2015 Certification" class="cert-img">
+                            <div class="cert-overlay">
+                                <span class="zoom-icon">🔍</span>
+                                <span data-i18n="cert_click_view">Click to View Certificate</span>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-badge">ISO 14001:2015</div>
+                            <h3 data-i18n="cert_14001_title">Environmental Management System (EMS)</h3>
+                            <p data-i18n="cert_14001_desc">Helps manage environmental impact, reduce waste, and demonstrate commitment to sustainability.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3: ISO 45001 -->
+                    <div class="cert-card glass" onclick="window.location='certifications.html'; return false;" data-cert-img="assets/images/iso_45001.jpg"">
+                        <div class="cert-img-wrapper">
+                            <img loading="lazy" src="assets/images/iso_45001.jpg" alt="ISO 45001:2018 Certification" class="cert-img">
+                            <div class="cert-overlay">
+                                <span class="zoom-icon">🔍</span>
+                                <span data-i18n="cert_click_view">Click to View Certificate</span>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-badge">ISO 45001:2018</div>
+                            <h3 data-i18n="cert_45001_title">Occupational Health & Safety (OHSMS)</h3>
+                            <p data-i18n="cert_45001_desc">Ensures safety standards to reduce occupational injuries, illnesses, and promote a secure workspace.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Articles & News Section -->
+        <section id="articles" class="articles-section">
+            <div class="container">
+                <div class="text-center section-header">
+                    <span class="section-tag glow-teal" data-i18n="articles_tag">Maritime Insights</span>
+                    <h2 class="section-title" data-i18n="articles_title">Container Safety & Standards</h2>
+                    <p class="section-desc" data-i18n="articles_desc">Read the latest container security standards, logistics bulletins, and regulatory maritime updates.</p>
+                    <a href="articles.html" class="btn btn-glowing section-page-link" style="margin-top:1rem;display:inline-flex;align-items:center;gap:0.5rem;">
+                        <span data-i18n="nav_articles">Browse All Articles</span> <span style="font-size:1.1em;">→</span>
+                    </a>
+                </div>
+
+                <div class="articles-grid">
+                    <!-- Article 1 -->
+                    <article class="article-card glass" onclick="window.location='articles.html'" style="cursor: pointer;">
+                        <div class="article-tag" data-i18n="art1_tag">Regulations</div>
+                        <div class="article-content">
+                            <span class="article-date" data-i18n="art1_date">June 14, 2026</span>
+                            <h3 data-i18n="art1_title">Understanding the ISO Container Standards</h3>
+                            <p data-i18n="art1_desc">An in-depth review of ISO 668 dimensions, testing criteria, and load parameters to prevent terminal accidents.</p>
+                            <a href="articles.html" class="read-more-link"><span data-i18n="art_read_more">Read Article</span> <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="article-card glass" onclick="window.location='articles.html'" style="cursor: pointer;">
+                        <div class="article-tag" data-i18n="art2_tag">Reefer Tech</div>
+                        <div class="article-content">
+                            <span class="article-date" data-i18n="art2_date">May 28, 2026</span>
+                            <h3 data-i18n="art2_title">Preventing Cold Chain Breakage in Reefers</h3>
+                            <p data-i18n="art2_desc">Key guidelines for checking refrigerated container machinery, compressor integrity, and diagnostic log data before export.</p>
+                            <a href="articles.html" class="read-more-link"><span data-i18n="art_read_more">Read Article</span> <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="article-card glass" onclick="window.location='articles.html'" style="cursor: pointer;">
+                        <div class="article-tag" data-i18n="art3_tag">Security</div>
+                        <div class="article-content">
+                            <span class="article-date" data-i18n="art3_date">April 10, 2026</span>
+                            <h3 data-i18n="art3_title">7-Point Container Security Seals Demystified</h3>
+                            <p data-i18n="art3_desc">How strict structural inspection at port entry blocks illicit cargo entry and guarantees seal security compliance.</p>
+                            <a href="articles.html" class="read-more-link"><span data-i18n="art_read_more">Read Article</span> <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terminal Cargo Tracking Section -->
+        <section id="tracking" class="video-section tracking-section">
+            <div class="container">
+                <div class="text-center section-header">
+                    <span class="section-tag glow-green" data-i18n="track_tag">Live Cargo Tracking</span>
+                    <h2 class="section-title" data-i18n="track_title">Port Said Terminal Tracking & Verification</h2>
+                    <p class="section-desc" data-i18n="track_desc">Trace container status directly from Port Said Terminal (PSCCHC) database, synchronized with SeaLandX structural safety inspections.</p>
+                </div>
+
+                <div class="tracking-wrapper glass">
+                    <!-- Tabs -->
+                    <div class="tracking-tabs">
+                        <button class="track-tab active" data-tab="container" data-i18n="tab_container">Container Tracking</button>
+                        <button class="track-tab" data-tab="booking" data-i18n="tab_booking">Booking Trace</button>
+                        <button class="track-tab" data-tab="bol" data-i18n="tab_bol">BOL Trace</button>
+                    </div>
+
+                    <!-- Search Input -->
+                    <div class="tracking-search-box">
+                        <div class="search-input-wrapper">
+                            <input type="text" id="track-input" placeholder="Enter Container ID (e.g., MSCU9284716)" data-i18n-placeholder="placeholder_container">
+                            <button id="btn-trace" class="btn btn-primary">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon" style="width:18px;height:18px;margin-inline-end:6px;">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                                <span data-i18n="btn_trace">Trace</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Terminal Loader Screen -->
+                    <div id="tracking-console-loader" class="tracking-loader">
+                        <div class="loader-scanline"></div>
+                        <div class="console-lines" id="console-log-lines">
+                            <!-- JS will inject lines -->
+                        </div>
+                    </div>
+
+                    <!-- Result Panel -->
+                    <div id="tracking-result-panel" class="tracking-result-panel">
+                        <div class="result-grid">
+                            <!-- Port Said Status -->
+                            <div class="result-card pscchc-status-card">
+                                <div class="card-title-box">
+                                    <h4 id="res-card-title" data-i18n="tab_container">Container Tracking</h4>
+                                </div>
+                                <div class="status-details">
+                                    <div class="detail-row">
+                                        <span class="label" id="res-type-label" data-i18n="lbl_container_id">Container ID</span>
+                                        <span class="val text-teal" id="res-container-id">MSCU9284716</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="label" data-i18n="lbl_terminal">Terminal</span>
+                                        <span class="val" data-i18n="val_terminal_west">Port Said West Terminal (PSCCHC)</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="label" data-i18n="lbl_size_type">Size & Type</span>
+                                        <span class="val" id="res-size-type">40' High Cube Dry Van</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="label" data-i18n="lbl_vessel_voyage">Vessel & Voyage</span>
+                                        <span class="val" id="res-vessel-voyage">MSC AMBRA / 2403E</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="label" data-i18n="lbl_current_status">Current Status</span>
+                                        <span class="val badge-status green" id="res-status" data-i18n="status_discharged">DISCHARGED / YARD STORAGE</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SeaLandX Verification -->
+                            <div class="result-card sealandx-verify-card">
+                                <div class="verification-header">
+                                    <div class="shield-icon">🛡️</div>
+                                    <div class="badge-title">
+                                        <span class="badge-glow-green" data-i18n="badge_verified">SeaLandX Verified</span>
+                                        <span class="badge-desc" data-i18n="badge_verified_sub">Structural Scan Passed</span>
+                                    </div>
+                                </div>
+                                <div class="status-details">
+                                    <div class="detail-row">
+                                        <span class="label" data-i18n="lbl_inspection_date">Inspection Date</span>
+                                        <span class="val" id="res-inspect-date">2026-07-16 11:30 UTC</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="label" data-i18n="lbl_seal_status">Seal Status</span>
+                                        <span class="val text-green" data-i18n="status_compliant">COMPLIANT (BOL MATCHED)</span>
+                                    </div>
+                                    <div class="detail-row" style="flex-direction:column;align-items:flex-start;gap:8px;border-bottom:none;">
+                                        <span class="label" data-i18n="lbl_checklist">7-Point Checklist</span>
+                                        <div class="checklist-grid">
+                                            <div class="check-item passed"><span>✓</span> <span data-i18n="chk_front">Front Wall</span></div>
+                                            <div class="check-item passed"><span>✓</span> <span data-i18n="chk_left">Left Side</span></div>
+                                            <div class="check-item passed"><span>✓</span> <span data-i18n="chk_right">Right Side</span></div>
+                                            <div class="check-item passed"><span>✓</span> <span data-i18n="chk_floor">Floor</span></div>
+                                            <div class="check-item passed"><span>✓</span> <span data-i18n="chk_roof">Roof</span></div>
+                                            <div class="check-item passed"><span>✓</span> <span data-i18n="chk_doors">Doors</span></div>
+                                            <div class="check-item passed"><span>✓</span> <span data-i18n="chk_under">Undercarriage</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Left: Contact Form -->
+                    <div class="contact-form-container glass">
+                        <div class="card-glow-element" style="background: radial-gradient(circle at bottom left, rgba(0, 242, 254, 0.1), transparent 70%);"></div>
+                        <span class="section-tag glow-green" data-i18n="form_tag">Get in Touch</span>
+                        <h2 class="form-title" data-i18n="form_title">Request Diagnostic Survey</h2>
+                        <p class="form-subtext" data-i18n="form_desc">Submit the details of your container fleet, and our certified cargo surveyors will contact you within 2 hours.</p>
+                        
+                        <form id="inspection-request-form" class="sleek-form">
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="client-name" data-i18n="form_lbl_name">Full Name</label>
+                                    <input type="text" id="client-name" name="name" required placeholder="John Doe" data-i18n-placeholder="form_ph_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-email" data-i18n="form_lbl_email">Email Address</label>
+                                    <input type="email" id="client-email" name="email" required placeholder="john@company.com" data-i18n-placeholder="form_ph_email">
+                                </div>
+                            </div>
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="client-phone" data-i18n="form_lbl_phone">Phone Number</label>
+                                    <input type="tel" id="client-phone" name="phone" placeholder="+1 (555) 019-2834" data-i18n-placeholder="form_ph_phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inspection-port" data-i18n="form_lbl_port">Target Port / Location</label>
+                                    <input type="text" id="inspection-port" name="port" required placeholder="Port of Alexandria, EG" data-i18n-placeholder="form_ph_port">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inspection-type" data-i18n="form_lbl_type">Survey Type</label>
+                                <select id="inspection-type" name="type" class="custom-select">
+                                    <option value="psi" data-i18n="opt_psi">Container Inspection & Survey</option>
+                                    <option value="reefer" data-i18n="opt_reefer">Cargo Inspection & Survey</option>
+                                    <option value="dry-van" data-i18n="opt_dry">Cargo Stuffing</option>
+                                    <option value="iso-tank" data-i18n="opt_tank">Cargo Lashing</option>
+                                    <option value="lashing" data-i18n="opt_lashing">Cargo Disposal</option>
+                                    <option value="empty-container" data-i18n="opt_empty">Container Cleaning</option>
+                                    <option value="custom" data-i18n="opt_custom">Multiple / Fleet Inspection</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-message" data-i18n="form_lbl_msg">Survey Details / Container Numbers</label>
+                                <textarea id="client-message" name="message" rows="4" placeholder="Describe cargo volume, specific dates, or container prefixes..." data-i18n-placeholder="form_ph_msg"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block btn-glowing" id="btn-submit" data-i18n="btn_submit">Submit Survey Request</button>
+                        </form>
+                        <div id="form-feedback" class="form-feedback-msg hidden">
+                            <span class="feedback-icon">✓</span>
+                            <div class="feedback-text">
+                                <h4 data-i18n="feedback_title">Request Submitted Successfully!</h4>
+                                <p data-i18n="feedback_desc">Thank you. A logistics surveyor will review your ticket and contact you shortly.</p>
+                                <button type="button" id="btn-reset-form" class="btn btn-primary" style="margin-top: 1.25rem; padding: 0.5rem 1.25rem; font-size: 0.85rem;" data-i18n="btn_send_another">Send Another Request</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Info Panel & Custom Map Mockup -->
+                    <div class="contact-info-panel">
+                        <div class="info-card glass">
+                            <h3 data-i18n="info_title">Corporate Head Office</h3>
+                            <p class="company-desc" data-i18n="info_desc">SeaLandX operates global survey hubs at major trade nodes. Contact us directly for urgent vessel surveyor dispatch.</p>
+                            
+                            <div class="contact-channels">
+                                <div class="channel-item">
+                                    <div class="channel-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                            <polyline points="22,6 12,13 2,6"/>
+                                        </svg>
+                                    </div>
+                                    <div class="channel-detail">
+                                        <span class="label" data-i18n="lbl_email">Email Survey Desk</span>
+                                        <a href="mailto:operations@sealandx.com" class="val">operations@sealandx.com</a>
+                                    </div>
+                                </div>
+                                <div class="channel-item">
+                                    <div class="channel-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="#00ff87" stroke-width="2">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="channel-detail">
+                                        <span class="label" data-i18n="lbl_phone">Urgent Hotlines</span>
+                                        <a href="tel:+20122732615" class="val">+20-122732615</a>
+                                    </div>
+                                </div>
+                                <div class="channel-item">
+                                    <div class="channel-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="#4364f7" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                    </div>
+                                    <div class="channel-detail">
+                                        <span class="label" data-i18n="lbl_office">Main Terminal Office</span>
+                                        <span class="val" data-i18n="lbl_office_val">Suez Canal Free Zone, Block 14, Port Said, Egypt</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Styled Vector Map Graphic -->
+                        <div class="vector-map-container glass">
+                            <div class="map-grid"></div>
+                            <div class="map-marker port-said pulse-marker">
+                                <span class="marker-label" data-i18n="map_hq">HQ: Port Said</span>
+                            </div>
+                            <div class="map-marker alexandria"></div>
+                            <div class="map-marker suez"></div>
+                            <div class="map-marker damietta"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners-section">
+            <div class="container">
+                <div class="text-center section-header">
+                    <span class="section-tag glow-teal" data-i18n="partners_tag">Trusted Partners</span>
+                    <h2 class="section-title" data-i18n="partners_title">Our Partners</h2>
+                    <p class="section-desc" data-i18n="partners_desc">We work with the world's leading shipping lines, port authorities, and logistics networks.</p>
+                </div>
+                <div class="partners-slider-wrapper">
+                    <div class="partners-slider">
+                        <div class="partners-track">
+                            <div class="partner-group">
+                                <img loading="lazy" src="assets/images/partners/partner_1.png" alt="Partner Logo 1">
+                                <img loading="lazy" src="assets/images/partners/partner_2.png" alt="Partner Logo 2">
+                                <img loading="lazy" src="assets/images/partners/partner_3.png" alt="Partner Logo 3">
+                                <img loading="lazy" src="assets/images/partners/partner_4.jpeg" alt="Partner Logo 4">
+                                <img loading="lazy" src="assets/images/partners/partner_5.jpg" alt="Partner Logo 5">
+                                <img loading="lazy" src="assets/images/partners/partner_6.jpeg" alt="Partner Logo 6">
+                                <img loading="lazy" src="assets/images/partners/partner_7.jpg" alt="Partner Logo 7">
+                            </div>
+                            <div class="partner-group">
+                                <img loading="lazy" src="assets/images/partners/partner_1.png" alt="Partner Logo 1">
+                                <img loading="lazy" src="assets/images/partners/partner_2.png" alt="Partner Logo 2">
+                                <img loading="lazy" src="assets/images/partners/partner_3.png" alt="Partner Logo 3">
+                                <img loading="lazy" src="assets/images/partners/partner_4.jpeg" alt="Partner Logo 4">
+                                <img loading="lazy" src="assets/images/partners/partner_5.jpg" alt="Partner Logo 5">
+                                <img loading="lazy" src="assets/images/partners/partner_6.jpeg" alt="Partner Logo 6">
+                                <img loading="lazy" src="assets/images/partners/partner_7.jpg" alt="Partner Logo 7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Branding column -->
+                <div class="footer-col-brand">
+                    <a href="index.html" class="logo-container">
+                        <img src="assets/images/logo.png" alt="SeaLandX" class="logo-img footer-logo-img">
+                    </a>
+                    <p class="brand-desc" data-i18n="footer_brand_desc">Globally trusted marine cargo surveys, container seal audits, and logistics security assessments.</p>
+                </div>
+                <!-- Links column 1 -->
+                <div class="footer-col-links">
+                    <h4 data-i18n="footer_col1_header">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">Home Dashboard</a></li>
+                        <li><a href="services.html" data-i18n="nav_services">Inspection Services</a></li>
+                        <li><a href="guide.html" data-i18n="nav_guide">7-Point Standard</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">Global Profile</a></li>
+                    </ul>
+                </div>
+                <!-- Links column 2 -->
+                <div class="footer-col-links">
+                    <h4 data-i18n="footer_col2_header">Certifications</h4>
+                    <ul>
+                        <li><a href="services.html" data-i18n="cert_iicl">IICL Container Inspections</a></li>
+                        <li><a href="services.html" data-i18n="cert_iso">ISO 668 & 1496 Audits</a></li>
+                        <li><a href="services.html" data-i18n="cert_psi">Pre-Shipment Inspections</a></li>
+                        <li><a href="services.html" data-i18n="cert_reefer">Reefer Cold Chain Logs</a></li>
+                        <li><a href="services.html" data-i18n="cert_lashing">Cargo Lashing & Tie-downs</a></li>
+                        <li><a href="services.html" data-i18n="cert_empty">Empty Container Sweeps</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter column -->
+                <div class="footer-col-news">
+                    <h4 data-i18n="footer_col3_header">Logistics Bulletins</h4>
+                    <p data-i18n="footer_news_desc">Subscribe to receive regulatory safety updates directly in your inbox.</p>
+                    <form class="footer-news-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" placeholder="email@company.com" data-i18n-placeholder="footer_news_ph" required>
+                        <button type="submit" class="btn btn-primary" data-i18n="footer_news_btn">Join</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SeaLandX. <span data-i18n="footer_copyright">All rights reserved. Designed for international safety compliance.</span></p>
+                <div class="footer-legal">
+                    <a href="index.html" data-i18n="footer_privacy">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="index.html" data-i18n="footer_terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sleek Lightbox Modal for Certificate Preview -->
+    <div id="cert-modal" class="cert-modal" onclick="closeCertModal()">
+        <span class="cert-modal-close" onclick="closeCertModal()">&times;</span>
+        <div class="cert-modal-content" onclick="event.stopPropagation()">
+            <img loading="lazy" id="cert-modal-img" src="" alt="ISO Certification Preview">
+        </div>
+    </div>
+
+    <!-- Sleek Lightbox Modal for Article Reader -->
+    <div id="article-modal" class="article-modal" onclick="closeArticleModal()">
+        <div class="article-modal-content" onclick="event.stopPropagation()">
+            <span class="article-modal-close" onclick="closeArticleModal()">&times;</span>
+            <div class="article-modal-body">
+                <span class="article-modal-tag" id="art-modal-tag">Category</span>
+                <span class="article-modal-date" id="art-modal-date">Date</span>
+                <h2 class="article-modal-title" id="art-modal-title">Title</h2>
+                <div class="article-modal-text" id="art-modal-text">
+                    <!-- Dynamic paragraphs will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Mode UI Indicator -->
+    <div id="demo-indicator" class="demo-indicator-bar"></div>
+    <div id="demo-badge" class="demo-active-badge">DEMO MODE ACTIVE</div>
+
+    <!-- Main JavaScript behavior script -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
