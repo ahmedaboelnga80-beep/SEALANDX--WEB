@@ -1088,6 +1088,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Ensure Hero background video starts playing seamlessly
+    const heroVid = document.getElementById('hero-video-bg');
+    if (heroVid) {
+        heroVid.play().catch(() => {});
+    }
+
     // INITIALIZATION: Populate blueprint panel with default hotspot (point 1)
     const defaultHotspot = document.querySelector('.blueprint-hotspot[data-point="1"]');
     if (defaultHotspot && infoChecklist) {
