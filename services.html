@@ -358,26 +358,51 @@
                 </div>
 
                 <!-- Service Detail 6: Cleaning -->
-                <div id="detail-cleaning" class="service-detail-block glass reveal-on-scroll alternate" style="padding: 3rem; border-radius: 20px; background: rgba(255,255,255,0.85); border: 1px solid var(--border-glass);">
-                    <div class="detail-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center;">
-                        <div class="detail-visual" style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; border: 1px solid var(--border-glass); order: 2;">
-                            <video src="assets/videos/container_cleaning_bg.mp4" poster="assets/images/F383178A-AE5C-4622-B2EB-32EAB80D543C.jpg" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.85) contrast(1.05);"></video>
-                            <div class="detail-stats-panel" style="position: absolute; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; padding: 1rem; background: rgba(0,0,0,0.65); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
-                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_std">Sanitary</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">Pest Free</span></div>
-                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: center;"><span class="label" style="font-size: 0.65rem; color: #a0aec0; text-transform: uppercase; font-family: var(--font-mono);" data-i18n="lbl_det_time">Duration</span><span class="val" style="font-size: 0.85rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">~1.0 Hours</span></div>
+                <div id="detail-cleaning" class="service-detail-block glass reveal-on-scroll alternate" style="padding: 3.5rem; border-radius: 24px; background: rgba(255,255,255,0.92); border: 1px solid var(--border-glass); box-shadow: 0 15px 40px rgba(0,0,0,0.06);">
+                    <div class="detail-grid" style="display: grid; grid-template-columns: 1fr 1.25fr; gap: 3.5rem; align-items: center;">
+                        
+                        <!-- Video Showcase Container -->
+                        <div class="detail-visual" style="position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; border: 1px solid var(--border-glass); order: 2; box-shadow: 0 15px 35px rgba(0,0,0,0.15); background: #0f172a;">
+                            <video src="assets/videos/container_cleaning_bg.mp4" poster="assets/images/IMG_6560.jpg" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.92) contrast(1.05);"></video>
+                            
+                            <!-- Video Live Field Badge -->
+                            <div style="position: absolute; top: 1rem; left: 1rem; background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(8px); padding: 0.4rem 0.9rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #00ff87; border: 1px solid rgba(0, 255, 135, 0.3); display: flex; align-items: center; gap: 6px;">
+                                <span style="width: 7px; height: 7px; border-radius: 50%; background: #00ff87; box-shadow: 0 0 8px #00ff87;"></span>
+                                <span data-i18n="clean_badge_live">Live Field Wash | Maersk & CMA CGM</span>
+                            </div>
+
+                            <!-- Floating Video Overlay Stats Panel -->
+                            <div class="detail-stats-panel" style="position: absolute; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; padding: 1.1rem 1.5rem; background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid rgba(255,255,255,0.12);">
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: flex-start;">
+                                    <span class="label" style="font-size: 0.65rem; color: #94a3b8; text-transform: uppercase; font-family: var(--font-mono); letter-spacing: 0.1em;" data-i18n="lbl_det_std">STANDARDS</span>
+                                    <span class="val" style="font-size: 0.95rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);" data-i18n="clean_val_std">Pest Free</span>
+                                </div>
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: flex-start;">
+                                    <span class="label" style="font-size: 0.65rem; color: #94a3b8; text-transform: uppercase; font-family: var(--font-mono); letter-spacing: 0.1em;" data-i18n="lbl_clean_press">PRESSURE</span>
+                                    <span class="val" style="font-size: 0.95rem; font-weight: 700; color: #00f2fe; font-family: var(--font-heading);">250 Bar Water Jet</span>
+                                </div>
+                                <div class="det-stat" style="display: flex; flex-direction: column; align-items: flex-start;">
+                                    <span class="label" style="font-size: 0.65rem; color: #94a3b8; text-transform: uppercase; font-family: var(--font-mono); letter-spacing: 0.1em;" data-i18n="lbl_det_time">AUDIT TIME</span>
+                                    <span class="val" style="font-size: 0.95rem; font-weight: 700; color: #ffffff; font-family: var(--font-heading);" data-i18n="clean_val_time">~1.0 Hours</span>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Content Column -->
                         <div class="detail-info" style="text-align: start;">
-                            <span class="section-tag glow-green" data-i18n="srv_empty_title" style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.75rem; display: inline-block; color: var(--neon-green);">Container Cleaning</span>
-                            <h2 class="detail-section-title" data-i18n="det_cleaning_title" style="font-size: clamp(1.8rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: -0.01em;">Empty Container Inspections</h2>
-                            <p class="detail-section-desc" data-i18n="det_cleaning_text" style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">Before cargo stuffing, empty containers must be clean, odorless, and free from pests. We perform sanitary verification, pest scans, and cleaning certificate audits.</p>
-                            <ul class="detail-checklist" style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
-                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_cleaning_point1">Agricultural pest and insect scanning</span></li>
-                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_cleaning_point2">Chemical odor testing and venting</span></li>
-                                <li style="display: flex; gap: 10px; font-size: 0.9rem; align-items: center;"><span class="check-bullet" style="color: var(--neon-green); font-weight: 700;">✓</span> <span data-i18n="det_cleaning_point3">Sanitary wash verification reports</span></li>
+                            <span class="section-tag glow-green" data-i18n="clean_sec_tag" style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700; margin-bottom: 0.75rem; display: inline-block; color: #10b981;">CONTAINER CLEANING</span>
+                            <h2 class="detail-section-title" data-i18n="det_cleaning_title" style="font-size: clamp(1.8rem, 3vw, 2.3rem); font-weight: 800; margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: -0.01em; color: #0f172a;">Empty Container Pest & Clean Audits</h2>
+                            <p class="detail-section-desc" data-i18n="det_cleaning_text" style="color: #475569; font-size: 1.05rem; line-height: 1.65; margin-bottom: 1.75rem;">Before cargo stuffing, empty containers must be clean, odorless, and free from pests. We perform high-pressure sanitization verification, pest scans, and digital cleaning certificate audits.</p>
+                            
+                            <ul class="detail-checklist" style="list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2.25rem;">
+                                <li style="display: flex; gap: 12px; font-size: 0.98rem; align-items: center; font-weight: 500; color: #1e293b;"><span class="check-bullet" style="color: #10b981; font-weight: 800; font-size: 1.15rem;">✓</span> <span data-i18n="det_cleaning_point1">Agricultural pest and insect scanning</span></li>
+                                <li style="display: flex; gap: 12px; font-size: 0.98rem; align-items: center; font-weight: 500; color: #1e293b;"><span class="check-bullet" style="color: #10b981; font-weight: 800; font-size: 1.15rem;">✓</span> <span data-i18n="det_cleaning_point2">Chemical odor testing and high-pressure venting</span></li>
+                                <li style="display: flex; gap: 12px; font-size: 0.98rem; align-items: center; font-weight: 500; color: #1e293b;"><span class="check-bullet" style="color: #10b981; font-weight: 800; font-size: 1.15rem;">✓</span> <span data-i18n="det_cleaning_point3">Sanitary wash verification & digital certificate reports</span></li>
                             </ul>
-                            <a href="contact.html" class="btn btn-primary" data-i18n="btn_request" style="border-radius: 30px; padding: 0.8rem 2rem; font-weight: 600; font-family: var(--font-heading); text-decoration: none;">Request Inspection</a>
+                            
+                            <a href="contact.html" class="btn btn-primary" data-i18n="btn_request" style="border-radius: 30px; padding: 0.9rem 2.25rem; font-weight: 700; font-family: var(--font-heading); text-decoration: none; background: linear-gradient(135deg, #007788 0%, #004d5a 100%); color: #fff; box-shadow: 0 4px 18px rgba(0,119,136,0.3);">Request Inspection</a>
                         </div>
+
                     </div>
                 </div>
 
