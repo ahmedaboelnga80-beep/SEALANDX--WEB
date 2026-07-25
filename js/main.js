@@ -438,7 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
        2. INTERSECTION OBSERVER — Video Autoplay on Viewport Entry
           (replaces GSAP ScrollTrigger — ~0 CPU vs ~30% CPU)
        ================================================================ */
-    const videoSections = document.querySelectorAll('.section-video-bg');
+    const videoSections = document.querySelectorAll('video, .section-video-bg');
 
     const videoObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
