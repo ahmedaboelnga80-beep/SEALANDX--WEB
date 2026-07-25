@@ -1067,6 +1067,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    /* ==========================================================
+       10. Hero Animated Background Parallax Effect
+       ========================================================== */
+    const heroSec = document.getElementById('home');
+    const bgOrbs = document.querySelectorAll('.glow-orb');
+
+    if (heroSec && bgOrbs.length > 0) {
+        heroSec.addEventListener('mousemove', (e) => {
+            const rect = heroSec.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+            bgOrbs.forEach((orb, idx) => {
+                const depth = (idx + 1) * 25;
+                const moveX = x * depth;
+                const moveY = y * depth;
+                orb.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+            });
+        });
+    }
+
     // INITIALIZATION: Populate blueprint panel with default hotspot (point 1)
     const defaultHotspot = document.querySelector('.blueprint-hotspot[data-point="1"]');
     if (defaultHotspot && infoChecklist) {
