@@ -5,130 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title_lashing">SeaLandX | Cargo Lashing Equipment, Parts & Securing Catalog</title>
     <meta name="description" content="Explore SeaLandX certified cargo lashing equipment: lashing belts, turnbuckles, lashing chains, container twistlocks, dunnage air bags, and corner protectors. Download our portfolio PDF & watch video demos.">
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Style Sheet -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-dark text-light font-sans antialiased page-lashing">
+<body class="page-lashing">
 
-    <!-- NAVIGATION BAR -->
-    <header class="navbar-fixed glass border-b border-light-10">
-        <div class="container navbar-container">
-            <a href="index.html" class="brand-logo" aria-label="SeaLandX Home">
-                <span class="logo-mark">SLX</span>
-                <div class="logo-text">
-                    <span class="logo-title">SeaLand<span class="text-accent">X</span></span>
-                    <span class="logo-sub" data-i18n="logo_subtitle">Integrated Logistics Services</span>
-                </div>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-container" id="nav-logo">
+                <img src="assets/images/logo.png" alt="SeaLandX" class="logo-img">
             </a>
 
-            <nav class="nav-menu" aria-label="Main Navigation">
-                <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
-                <a href="services.html" class="nav-link" data-i18n="nav_services">Services</a>
-                <a href="lashing.html" class="nav-link active" data-i18n="nav_lashing">Lashing Parts</a>
-                <a href="guide.html" class="nav-link" data-i18n="nav_guide">7-Point Guide</a>
-                <a href="certifications.html" class="nav-link" data-i18n="nav_certifications">Certifications</a>
-                <a href="articles.html" class="nav-link" data-i18n="nav_articles">Articles</a>
-                <a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a>
-                <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact Us</a>
+            <!-- Desktop Navigation Links -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                    <li><a href="services.html" class="nav-link" data-i18n="nav_services">Services</a></li>
+                    <li><a href="lashing.html" class="nav-link active" data-i18n="nav_lashing">Lashing Parts</a></li>
+                    <li><a href="guide.html" class="nav-link" data-i18n="nav_guide">7-Point Guide</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="certifications.html" class="nav-link" data-i18n="nav_certifications">Certifications</a></li>
+                    <li><a href="articles.html" class="nav-link" data-i18n="nav_articles">Articles</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact Us</a></li>
+                </ul>
             </nav>
 
-            <div class="nav-actions">
-                <button id="lang-toggle" class="btn btn-outlined btn-sm" aria-label="Toggle Language">العربية</button>
-                <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="btn_request">Request Inspection</a>
+            <div class="header-right">
+                <button class="btn-lang" id="lang-toggle" aria-label="Switch Language">العربية</button>
+                <div class="header-cta">
+                    <a href="contact.html" class="btn btn-glowing" data-i18n="btn_request">Request Inspection</a>
+                </div>
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
-
-            <button class="mobile-toggle" aria-label="Toggle Menu">
-                <span class="hamburger-bar"></span>
-                <span class="hamburger-bar"></span>
-                <span class="hamburger-bar"></span>
-            </button>
         </div>
     </header>
 
-    <main id="main-content">
+    <!-- Mobile Drawer Sidebar Navigation -->
+    <div class="mobile-drawer glass" id="mobile-drawer">
+        <div class="drawer-header">
+            <span class="drawer-title" data-i18n="nav_title">Navigation</span>
+            <button class="close-drawer" id="close-drawer" aria-label="Close Menu">&times;</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <ul>
+                <li><a href="index.html" class="mobile-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="services.html" class="mobile-link" data-i18n="nav_services">Services</a></li>
+                <li><a href="lashing.html" class="mobile-link active" data-i18n="nav_lashing">Lashing Parts</a></li>
+                <li><a href="guide.html" class="mobile-link" data-i18n="nav_guide">7-Point Guide</a></li>
+                <li><a href="about.html" class="mobile-link" data-i18n="nav_about">About Us</a></li>
+                <li><a href="certifications.html" class="mobile-link" data-i18n="nav_certifications">Certifications</a></li>
+                <li><a href="articles.html" class="mobile-link" data-i18n="nav_articles">Articles</a></li>
+                <li><a href="contact.html" class="mobile-link" data-i18n="nav_contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="drawer-footer">
+            <a href="contact.html" class="btn btn-primary btn-block" data-i18n="btn_request">Request Inspection</a>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main>
+
         <!-- LASHING HERO SECTION -->
-        <section class="lashing-hero relative overflow-hidden py-24 border-b border-light-10">
-            <div class="hero-bg-overlay"></div>
-            <div class="container relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                    <div class="lg:col-span-7 space-y-6">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass border border-accent-30 text-accent text-xs font-semibold tracking-wide uppercase">
-                            <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-                            <span data-i18n="lashing_hero_badge">Marine & Cargo Securing Gear Catalog</span>
-                        </div>
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight" data-i18n="lashing_hero_title">
+        <section id="lashing-hero" class="hero-section" style="min-height: auto; padding: 120px 0 60px;">
+            <div class="container">
+                <div class="about-grid">
+                    
+                    <div class="about-text-content">
+                        <span class="section-tag glow-teal" data-i18n="lashing_hero_badge">Marine & Cargo Securing Gear Catalog</span>
+                        <h1 class="hero-title" data-i18n="lashing_hero_title" style="font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 1.25rem;">
                             Cargo Lashing <br><span class="text-gradient">Equipment & Parts</span>
                         </h1>
-                        <p class="text-lg text-slate-300 max-w-2xl" data-i18n="lashing_hero_desc">
+                        <p class="hero-desc" data-i18n="lashing_hero_desc" style="margin-bottom: 2rem;">
                             Explore our comprehensive catalog of certified marine lashing equipment, heavy-duty ratchet straps, forged steel turnbuckles, lashing chains, container twistlocks, dunnage air bags, and corner protectors. Download our technical portfolio PDF and watch field video demonstrations.
                         </p>
 
-                        <div class="flex flex-wrap gap-4 pt-2">
-                            <a href="#parts-catalog" class="btn btn-primary flex items-center gap-2">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem;">
+                            <a href="#parts-catalog" class="btn btn-glowing">
                                 <span data-i18n="btn_explore_parts">Explore Parts Catalog</span>
                             </a>
-                            <a href="#video-showcase" class="btn btn-outlined flex items-center gap-2">
-                                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            <a href="#video-showcase" class="btn btn-primary" style="background: transparent; border: 1px solid var(--neon-teal); color: #fff;">
                                 <span data-i18n="btn_watch_videos">Watch Video Demos</span>
                             </a>
-                            <a href="#portfolio-pdf" class="btn btn-outlined flex items-center gap-2">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <a href="#portfolio-pdf" class="btn btn-primary" style="background: transparent; border: 1px solid var(--neon-green); color: #fff;">
                                 <span data-i18n="btn_download_portfolio_hero">Portfolio PDF</span>
                             </a>
                         </div>
 
-                        <!-- Stats Bar -->
-                        <div class="grid grid-cols-3 gap-4 pt-6 border-t border-light-10 max-w-xl">
-                            <div>
-                                <div class="text-2xl font-extrabold text-accent">100%</div>
-                                <div class="text-xs text-slate-400" data-i18n="stat_lashing_iso">ISO & IMO Compliant</div>
+                        <!-- Stats Panel -->
+                        <div class="stats-card glass" style="grid-template-columns: repeat(3, 1fr); padding: 1rem 1.5rem;">
+                            <div class="stat-item">
+                                <div class="stat-number text-gradient" style="font-size: 1.5rem;">100%</div>
+                                <div class="stat-label" data-i18n="stat_lashing_iso">ISO & IMO Compliant</div>
                             </div>
-                            <div>
-                                <div class="text-2xl font-extrabold text-accent">10,000+ daN</div>
-                                <div class="text-xs text-slate-400" data-i18n="stat_lashing_capacity">Heavy Lashing Load</div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number text-gradient" style="font-size: 1.5rem;">10,000+ daN</div>
+                                <div class="stat-label" data-i18n="stat_lashing_capacity">Heavy Lashing Load</div>
                             </div>
-                            <div>
-                                <div class="text-2xl font-extrabold text-accent">Grade 80/100</div>
-                                <div class="text-xs text-slate-400" data-i18n="stat_lashing_grade">Certified Alloy Steel</div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number text-gradient" style="font-size: 1.5rem;">Grade 80/100</div>
+                                <div class="stat-label" data-i18n="stat_lashing_grade">Certified Alloy Steel</div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Featured Hero Image / Card -->
-                    <div class="lg:col-span-5 relative">
-                        <div class="glass-card overflow-hidden rounded-2xl border border-light-15 shadow-2xl relative group">
-                            <img src="assets/lashing/images/899d5e60-1667-4061-a70e-6a58a3b001fc.JPG" alt="Cargo Lashing Operations" class="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 right-0 p-6 space-y-2">
-                                <div class="flex items-center justify-between">
-                                    <span class="badge badge-accent" data-i18n="badge_featured_gear">Heavy Duty Securing</span>
-                                    <span class="text-xs text-slate-300 font-mono">SLX-LASH-2026</span>
-                                </div>
-                                <h3 class="text-xl font-bold text-white" data-i18n="hero_card_title">On-Site Vessel & Container Lashing</h3>
-                                <p class="text-xs text-slate-300" data-i18n="hero_card_desc">Certified tie-down verification for Flat Racks, Breakbulk, and Heavy Machinery.</p>
-                            </div>
+                    <!-- Right Hero Visual -->
+                    <div class="about-right-panel">
+                        <div class="about-visual-wrapper glass" style="aspect-ratio: 1.3;">
+                            <img src="assets/lashing/images/899d5e60-1667-4061-a70e-6a58a3b001fc.JPG" alt="Cargo Lashing Operations" class="about-container-image" style="filter: brightness(0.8) contrast(1.1);">
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- LASHING PARTS & EQUIPMENT CATALOG (FILTERABLE) -->
-        <section id="parts-catalog" class="py-20 bg-slate-900/50 border-b border-light-10">
+        <!-- LASHING PARTS & EQUIPMENT CATALOG (FILTERABLE GRID) -->
+        <section id="parts-catalog" class="services-details-wrap" style="padding: 5rem 0; background: var(--bg-sec);">
             <div class="container">
-                <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
-                    <span class="text-accent text-sm font-semibold uppercase tracking-wider" data-i18n="catalog_tag">Equipment Catalog</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white" data-i18n="catalog_title">Cargo Lashing Parts & Accessories</h2>
-                    <p class="text-slate-400" data-i18n="catalog_desc">Browse high-capacity lashing gear engineered for extreme marine environments and heavy transport.</p>
+                <div class="text-center section-header" style="margin-bottom: 3rem;">
+                    <span class="section-tag glow-green" data-i18n="catalog_tag">Equipment Catalog</span>
+                    <h2 class="section-title" data-i18n="catalog_title">Cargo Lashing Parts & Accessories</h2>
+                    <p class="section-desc" data-i18n="catalog_desc">Browse high-capacity lashing gear engineered for extreme marine environments and heavy transport.</p>
                     
                     <!-- Category Filter Buttons -->
-                    <div class="flex flex-wrap justify-center gap-2 pt-4" id="lashing-filters">
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-top: 1.5rem;" id="lashing-filters">
                         <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All Parts</button>
                         <button class="filter-btn" data-filter="straps" data-i18n="filter_straps">Belts & Straps</button>
                         <button class="filter-btn" data-filter="binders" data-i18n="filter_binders">Turnbuckles & Binders</button>
@@ -139,156 +151,140 @@
                 </div>
 
                 <!-- Equipment Cards Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="parts-grid">
+                <div class="certifications-grid" id="parts-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
 
                     <!-- Part 1: Lashing Belts & Straps -->
-                    <div class="part-card glass border border-light-10 rounded-xl overflow-hidden hover:border-accent/40 transition-all duration-300 flex flex-col" data-category="straps">
-                        <div class="part-thumb relative overflow-hidden h-52 bg-slate-950">
-                            <img src="assets/lashing/images/76dbe5a0-0d14-455b-aa3a-054e1f5fd0f3.JPG" alt="Lashing Belts" class="w-full h-full object-cover part-img">
+                    <div class="cert-card part-card" data-category="straps">
+                        <div class="cert-img-wrapper" style="height: 180px;">
+                            <img src="assets/lashing/images/76dbe5a0-0d14-455b-aa3a-054e1f5fd0f3.JPG" alt="Lashing Belts" class="cert-img">
                             <span class="part-category-tag" data-i18n="cat_straps">Belts & Straps</span>
                         </div>
-                        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white mb-2" data-i18n="part1_title">Heavy-Duty Polyester Lashing Belts</h3>
-                                <p class="text-xs text-slate-400 leading-relaxed" data-i18n="part1_desc">High-tenacity 100% polyester webbing straps equipped with ergonomic ratchet buckles and claw hooks for heavy container cargo securing.</p>
-                            </div>
-                            <div class="spec-list space-y-1.5 text-xs text-slate-300 border-t border-light-10 pt-3 font-mono">
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_capacity">Lashing Capacity (LC):</span> <span class="text-accent font-bold">2500 - 10,000 daN</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_width">Width:</span> <span>50mm - 100mm</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_standard">Standard:</span> <span>EN 12195-2 / IMO</span></div>
+                        <div class="cert-body" style="padding: 1.25rem;">
+                            <h3 data-i18n="part1_title" style="font-size: 1rem; margin-bottom: 0.5rem; color: #fff;">Heavy-Duty Polyester Lashing Belts</h3>
+                            <p data-i18n="part1_desc" style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">High-tenacity 100% polyester webbing straps equipped with ergonomic ratchet buckles and claw hooks for heavy container cargo securing.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border-top: 1px solid var(--border-glass); padding-top: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_capacity">Lashing Capacity:</span> <strong style="color:var(--neon-teal);">2500 - 10,000 daN</strong></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_width">Width:</span> <span>50mm - 100mm</span></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_standard">Standard:</span> <span>EN 12195-2 / IMO</span></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Part 2: Steel Turnbuckles & Load Binders -->
-                    <div class="part-card glass border border-light-10 rounded-xl overflow-hidden hover:border-accent/40 transition-all duration-300 flex flex-col" data-category="binders">
-                        <div class="part-thumb relative overflow-hidden h-52 bg-slate-950">
-                            <img src="assets/lashing/images/3e5b80d6-63b1-4c66-8f35-9e65da902195.JPG" alt="Turnbuckles & Binders" class="w-full h-full object-cover part-img">
+                    <div class="cert-card part-card" data-category="binders">
+                        <div class="cert-img-wrapper" style="height: 180px;">
+                            <img src="assets/lashing/images/3e5b80d6-63b1-4c66-8f35-9e65da902195.JPG" alt="Turnbuckles & Binders" class="cert-img">
                             <span class="part-category-tag" data-i18n="cat_binders">Turnbuckles</span>
                         </div>
-                        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white mb-2" data-i18n="part2_title">Drop Forged Turnbuckles & Ratchet Binders</h3>
-                                <p class="text-xs text-slate-400 leading-relaxed" data-i18n="part2_desc">Heavy duty tensioning binders with jaw-and-eye or hook ends designed for steel wire rope and lashing chain assemblies on vessel decks.</p>
-                            </div>
-                            <div class="spec-list space-y-1.5 text-xs text-slate-300 border-t border-light-10 pt-3 font-mono">
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_break_load">Break Load:</span> <span class="text-accent font-bold">15,000 - 20,000 kg</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_material">Material:</span> <span>Drop Forged Alloy Steel</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_finish">Finish:</span> <span>Hot Dip Galvanized</span></div>
+                        <div class="cert-body" style="padding: 1.25rem;">
+                            <h3 data-i18n="part2_title" style="font-size: 1rem; margin-bottom: 0.5rem; color: #fff;">Drop Forged Turnbuckles & Ratchet Binders</h3>
+                            <p data-i18n="part2_desc" style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">Heavy duty tensioning binders with jaw-and-eye or hook ends designed for steel wire rope and lashing chain assemblies on vessel decks.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border-top: 1px solid var(--border-glass); padding-top: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_break_load">Break Load:</span> <strong style="color:var(--neon-teal);">15,000 - 20,000 kg</strong></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_material">Material:</span> <span>Drop Forged Alloy Steel</span></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_finish">Finish:</span> <span>Hot Dip Galvanized</span></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Part 3: Lashing Chains & Grab Hooks -->
-                    <div class="part-card glass border border-light-10 rounded-xl overflow-hidden hover:border-accent/40 transition-all duration-300 flex flex-col" data-category="chains">
-                        <div class="part-thumb relative overflow-hidden h-52 bg-slate-950">
-                            <img src="assets/lashing/images/a7c3ddf9-006d-4482-8c44-4bf838d6c10e.JPG" alt="Lashing Chains" class="w-full h-full object-cover part-img">
+                    <div class="cert-card part-card" data-category="chains">
+                        <div class="cert-img-wrapper" style="height: 180px;">
+                            <img src="assets/lashing/images/a7c3ddf9-006d-4482-8c44-4bf838d6c10e.JPG" alt="Lashing Chains" class="cert-img">
                             <span class="part-category-tag" data-i18n="cat_chains">Chains</span>
                         </div>
-                        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white mb-2" data-i18n="part3_title">Grade 80/100 Alloy Lashing Chains</h3>
-                                <p class="text-xs text-slate-400 leading-relaxed" data-i18n="part3_desc">High strength alloy lashing chain assemblies with clevis grab hooks and shortening clutches for heavy machinery, steel coils, and project cargo.</p>
-                            </div>
-                            <div class="spec-list space-y-1.5 text-xs text-slate-300 border-t border-light-10 pt-3 font-mono">
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_chain_size">Chain Dia:</span> <span class="text-accent font-bold">9mm - 16mm</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_lashing_capacity">Lashing Cap:</span> <span>100 kN - 200 kN</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_grade">Grade:</span> <span>Grade 80 / Grade 100</span></div>
+                        <div class="cert-body" style="padding: 1.25rem;">
+                            <h3 data-i18n="part3_title" style="font-size: 1rem; margin-bottom: 0.5rem; color: #fff;">Grade 80/100 Alloy Lashing Chains</h3>
+                            <p data-i18n="part3_desc" style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">High strength alloy lashing chain assemblies with clevis grab hooks and shortening clutches for heavy machinery, steel coils, and project cargo.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border-top: 1px solid var(--border-glass); padding-top: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_chain_size">Chain Dia:</span> <strong style="color:var(--neon-teal);">9mm - 16mm</strong></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_lashing_capacity">Lashing Cap:</span> <span>100 kN - 200 kN</span></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_grade">Grade:</span> <span>Grade 80 / Grade 100</span></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Part 4: Forged D-Rings & Deck Fittings -->
-                    <div class="part-card glass border border-light-10 rounded-xl overflow-hidden hover:border-accent/40 transition-all duration-300 flex flex-col" data-category="twistlocks">
-                        <div class="part-thumb relative overflow-hidden h-52 bg-slate-950">
-                            <img src="assets/lashing/images/7a4665e2-f232-43b7-9afd-ea6ad149b69a.JPG" alt="D-Rings & Deck Fittings" class="w-full h-full object-cover part-img">
+                    <div class="cert-card part-card" data-category="twistlocks">
+                        <div class="cert-img-wrapper" style="height: 180px;">
+                            <img src="assets/lashing/images/7a4665e2-f232-43b7-9afd-ea6ad149b69a.JPG" alt="D-Rings & Deck Fittings" class="cert-img">
                             <span class="part-category-tag" data-i18n="cat_deck">Deck Fittings</span>
                         </div>
-                        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white mb-2" data-i18n="part4_title">Weldable D-Rings & Floor Lashing Points</h3>
-                                <p class="text-xs text-slate-400 leading-relaxed" data-i18n="part4_desc">Forged steel D-rings with weld-on strap plates for vessel decks, flat rack floors, and trailer chassis anchor points.</p>
-                            </div>
-                            <div class="spec-list space-y-1.5 text-xs text-slate-300 border-t border-light-10 pt-3 font-mono">
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_breaking_strength">MBL:</span> <span class="text-accent font-bold">10 Tons - 50 Tons</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_type">Type:</span> <span>Weldable / Recessed</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_cert">Certification:</span> <span>DNV-GL / ABS</span></div>
+                        <div class="cert-body" style="padding: 1.25rem;">
+                            <h3 data-i18n="part4_title" style="font-size: 1rem; margin-bottom: 0.5rem; color: #fff;">Weldable D-Rings & Floor Lashing Points</h3>
+                            <p data-i18n="part4_desc" style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">Forged steel D-rings with weld-on strap plates for vessel decks, flat rack floors, and trailer chassis anchor points.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border-top: 1px solid var(--border-glass); padding-top: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_breaking_strength">MBL:</span> <strong style="color:var(--neon-teal);">10 Tons - 50 Tons</strong></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_type">Type:</span> <span>Weldable / Recessed</span></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_cert">Certification:</span> <span>DNV-GL / ABS</span></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Part 5: Container Twistlocks & Bridge Fittings -->
-                    <div class="part-card glass border border-light-10 rounded-xl overflow-hidden hover:border-accent/40 transition-all duration-300 flex flex-col" data-category="twistlocks">
-                        <div class="part-thumb relative overflow-hidden h-52 bg-slate-950">
-                            <img src="assets/lashing/images/a622ca35-e84c-420a-9a4b-9e80e47bff45.JPG" alt="Container Twistlocks" class="w-full h-full object-cover part-img">
+                    <div class="cert-card part-card" data-category="twistlocks">
+                        <div class="cert-img-wrapper" style="height: 180px;">
+                            <img src="assets/lashing/images/a622ca35-e84c-420a-9a4b-9e80e47bff45.JPG" alt="Container Twistlocks" class="cert-img">
                             <span class="part-category-tag" data-i18n="cat_twistlocks">Twistlocks</span>
                         </div>
-                        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white mb-2" data-i18n="part5_title">Container Twistlocks & Bridge Fittings</h3>
-                                <p class="text-xs text-slate-400 leading-relaxed" data-i18n="part5_desc">Manual and semi-automatic twistlocks, stacking cones, and bridge clamps designed to lock container corner castings securely on vessel bays.</p>
-                            </div>
-                            <div class="spec-list space-y-1.5 text-xs text-slate-300 border-t border-light-10 pt-3 font-mono">
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_shear_load">Shear Load:</span> <span class="text-accent font-bold">420 kN</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_tension_load">Tension Load:</span> <span>500 kN</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_operation">Operation:</span> <span>Manual / Semi-Auto</span></div>
+                        <div class="cert-body" style="padding: 1.25rem;">
+                            <h3 data-i18n="part5_title" style="font-size: 1rem; margin-bottom: 0.5rem; color: #fff;">Container Twistlocks & Bridge Fittings</h3>
+                            <p data-i18n="part5_desc" style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">Manual and semi-automatic twistlocks, stacking cones, and bridge clamps designed to lock container corner castings securely on vessel bays.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border-top: 1px solid var(--border-glass); padding-top: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_shear_load">Shear Load:</span> <strong style="color:var(--neon-teal);">420 kN</strong></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_tension_load">Tension Load:</span> <span>500 kN</span></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_operation">Operation:</span> <span>Manual / Semi-Auto</span></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Part 6: Inflatable Dunnage Air Bags -->
-                    <div class="part-card glass border border-light-10 rounded-xl overflow-hidden hover:border-accent/40 transition-all duration-300 flex flex-col" data-category="dunnage">
-                        <div class="part-thumb relative overflow-hidden h-52 bg-slate-950">
-                            <img src="assets/lashing/images/b9774c8e-b5f6-49ab-b74b-e65d818d43a8.JPG" alt="Dunnage Bags" class="w-full h-full object-cover part-img">
+                    <div class="cert-card part-card" data-category="dunnage">
+                        <div class="cert-img-wrapper" style="height: 180px;">
+                            <img src="assets/lashing/images/b9774c8e-b5f6-49ab-b74b-e65d818d43a8.JPG" alt="Dunnage Bags" class="cert-img">
                             <span class="part-category-tag" data-i18n="cat_dunnage">Dunnage Bags</span>
                         </div>
-                        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white mb-2" data-i18n="part6_title">Inflatable Cargo Dunnage Air Bags</h3>
-                                <p class="text-xs text-slate-400 leading-relaxed" data-i18n="part6_desc">Kraft paper and woven polypropylene inflatable dunnage bags designed to fill container voids, prevent cargo shifts, and absorb sea shocks.</p>
-                            </div>
-                            <div class="spec-list space-y-1.5 text-xs text-slate-300 border-t border-light-10 pt-3 font-mono">
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_pressure">Max Pressure:</span> <span class="text-accent font-bold">0.2 - 0.8 Bar</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_ply">Structure:</span> <span>2-Ply Kraft / Woven PP</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_valve">Valve:</span> <span>Fast-Fill Venturi Valve</span></div>
+                        <div class="cert-body" style="padding: 1.25rem;">
+                            <h3 data-i18n="part6_title" style="font-size: 1rem; margin-bottom: 0.5rem; color: #fff;">Inflatable Cargo Dunnage Air Bags</h3>
+                            <p data-i18n="part6_desc" style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">Kraft paper and woven polypropylene inflatable dunnage bags designed to fill container voids, prevent cargo shifts, and absorb sea shocks.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border-top: 1px solid var(--border-glass); padding-top: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_pressure">Max Pressure:</span> <strong style="color:var(--neon-teal);">0.2 - 0.8 Bar</strong></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_ply">Structure:</span> <span>2-Ply Kraft / Woven PP</span></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_valve">Valve:</span> <span>Fast-Fill Venturi Valve</span></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Part 7: Corner Protectors & Edge Guards -->
-                    <div class="part-card glass border border-light-10 rounded-xl overflow-hidden hover:border-accent/40 transition-all duration-300 flex flex-col" data-category="dunnage">
-                        <div class="part-thumb relative overflow-hidden h-52 bg-slate-950">
-                            <img src="assets/lashing/images/98501183-38ce-4578-a501-e051f691bfce.JPG" alt="Corner Protectors" class="w-full h-full object-cover part-img">
+                    <div class="cert-card part-card" data-category="dunnage">
+                        <div class="cert-img-wrapper" style="height: 180px;">
+                            <img src="assets/lashing/images/98501183-38ce-4578-a501-e051f691bfce.JPG" alt="Corner Protectors" class="cert-img">
                             <span class="part-category-tag" data-i18n="cat_protection">Protection</span>
                         </div>
-                        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white mb-2" data-i18n="part7_title">Heavy-Duty Corner Edge Protectors</h3>
-                                <p class="text-xs text-slate-400 leading-relaxed" data-i18n="part7_desc">High-density plastic corner guards preventing strap friction wear and protecting cargo edges from crush deformation during tensioning.</p>
-                            </div>
-                            <div class="spec-list space-y-1.5 text-xs text-slate-300 border-t border-light-10 pt-3 font-mono">
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_material_p">Material:</span> <span class="text-accent font-bold">HDPE Plastic</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_compatibility">Fits Straps:</span> <span>50mm - 100mm</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_durability">Feature:</span> <span>UV & Weather Proof</span></div>
+                        <div class="cert-body" style="padding: 1.25rem;">
+                            <h3 data-i18n="part7_title" style="font-size: 1rem; margin-bottom: 0.5rem; color: #fff;">Heavy-Duty Corner Edge Protectors</h3>
+                            <p data-i18n="part7_desc" style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">High-density plastic corner guards preventing strap friction wear and protecting cargo edges from crush deformation during tensioning.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border-top: 1px solid var(--border-glass); padding-top: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_material_p">Material:</span> <strong style="color:var(--neon-teal);">HDPE Plastic</strong></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_compatibility">Fits Straps:</span> <span>50mm - 100mm</span></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_durability">Feature:</span> <span>UV & Weather Proof</span></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Part 8: Anti-Slip Rubber Mats & Timber Chocks -->
-                    <div class="part-card glass border border-light-10 rounded-xl overflow-hidden hover:border-accent/40 transition-all duration-300 flex flex-col" data-category="dunnage">
-                        <div class="part-thumb relative overflow-hidden h-52 bg-slate-950">
-                            <img src="assets/lashing/images/f2be2672-f7e3-4436-92e0-6d20c2bdba36.JPG" alt="Anti-Slip Rubber & Timber" class="w-full h-full object-cover part-img">
+                    <div class="cert-card part-card" data-category="dunnage">
+                        <div class="cert-img-wrapper" style="height: 180px;">
+                            <img src="assets/lashing/images/f2be2672-f7e3-4436-92e0-6d20c2bdba36.JPG" alt="Anti-Slip Rubber & Timber" class="cert-img">
                             <span class="part-category-tag" data-i18n="cat_blocking">Friction & Blocking</span>
                         </div>
-                        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white mb-2" data-i18n="part8_title">Anti-Slip Rubber Mats & Wooden Chocks</h3>
-                                <p class="text-xs text-slate-400 leading-relaxed" data-i18n="part8_desc">High friction rubber pads (µ ≥ 0.6) combined with hardwood blocking wedges for heavy machinery wheels and steel coil cradles.</p>
-                            </div>
-                            <div class="spec-list space-y-1.5 text-xs text-slate-300 border-t border-light-10 pt-3 font-mono">
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_friction">Friction (µ):</span> <span class="text-accent font-bold font-sans">≥ 0.60 (VDI 2700)</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_thickness">Thickness:</span> <span>8mm - 10mm</span></div>
-                                <div class="flex justify-between"><span class="text-slate-400" data-i18n="lbl_wood">Wood Grade:</span> <span>Hardwood ISPM 15</span></div>
+                        <div class="cert-body" style="padding: 1.25rem;">
+                            <h3 data-i18n="part8_title" style="font-size: 1rem; margin-bottom: 0.5rem; color: #fff;">Anti-Slip Rubber Mats & Wooden Chocks</h3>
+                            <p data-i18n="part8_desc" style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">High friction rubber pads (µ ≥ 0.6) combined with hardwood blocking wedges for heavy machinery wheels and steel coil cradles.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border-top: 1px solid var(--border-glass); padding-top: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_friction">Friction (µ):</span> <strong style="color:var(--neon-teal);">≥ 0.60 (VDI 2700)</strong></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_thickness">Thickness:</span> <span>8mm - 10mm</span></div>
+                                <div style="display:flex; justify-content:space-between;"><span data-i18n="lbl_wood">Wood Grade:</span> <span>Hardwood ISPM 15</span></div>
                             </div>
                         </div>
                     </div>
@@ -298,57 +294,51 @@
         </section>
 
         <!-- VIDEO SHOWCASE SECTION (HD DEMONSTRATIONS) -->
-        <section id="video-showcase" class="py-20 border-b border-light-10 relative overflow-hidden">
+        <section id="video-showcase" style="padding: 5rem 0; background: transparent;">
             <div class="container">
-                <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
-                    <span class="text-accent text-sm font-semibold uppercase tracking-wider" data-i18n="video_tag">Video Showcase</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white" data-i18n="video_title">Cargo Lashing Field Operations</h2>
-                    <p class="text-slate-400" data-i18n="video_desc">Watch our certified lashing team performing heavy cargo securing, chain tension testing, and container tie-down audits in real port environments.</p>
+                <div class="text-center section-header" style="margin-bottom: 3rem;">
+                    <span class="section-tag glow-teal" data-i18n="video_tag">Video Showcase</span>
+                    <h2 class="section-title" data-i18n="video_title">Cargo Lashing Field Operations</h2>
+                    <p class="section-desc" data-i18n="video_desc">Watch our certified lashing team performing heavy cargo securing, chain tension testing, and container tie-down audits in real port environments.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
 
-                    <!-- Video 1 -->
-                    <div class="video-card glass border border-light-15 rounded-2xl overflow-hidden shadow-2xl flex flex-col group">
-                        <div class="video-thumb relative overflow-hidden aspect-video bg-slate-950 cursor-pointer" onclick="openVideoModal('assets/lashing/videos/5c0e59d5-9304-490f-9c64-19f76134bcf2.MP4', 'Heavy Flat-Rack & Machinery Lashing Demo')">
-                            <video src="assets/lashing/videos/5c0e59d5-9304-490f-9c64-19f76134bcf2.MP4" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" muted loop playsinline></video>
-                            <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-all flex items-center justify-center">
-                                <div class="w-16 h-16 rounded-full bg-accent text-slate-950 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                                    <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    <!-- Video Card 1 -->
+                    <div class="service-card glass video-card" style="padding: 0;">
+                        <div class="video-thumb" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000; cursor: pointer; overflow: hidden;" onclick="openVideoModal('assets/lashing/videos/5c0e59d5-9304-490f-9c64-19f76134bcf2.MP4', 'Flat-Rack Heavy Machinery Lashing')">
+                            <video src="assets/lashing/videos/5c0e59d5-9304-490f-9c64-19f76134bcf2.MP4" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;" muted loop playsinline></video>
+                            <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;">
+                                <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--neon-teal); color: #020406; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 15px rgba(0,242,254,0.5);">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                                 </div>
                             </div>
-                            <span class="absolute top-4 right-4 bg-slate-950/80 text-accent text-xs font-mono px-2.5 py-1 rounded border border-accent/30 font-bold">HD VIDEO</span>
+                            <span style="position: absolute; top: 12px; right: 12px; background: rgba(2,4,6,0.85); color: var(--neon-teal); font-size: 0.65rem; font-weight: 700; padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(0,242,254,0.3);">HD VIDEO</span>
                         </div>
-                        <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-                            <div>
-                                <h3 class="text-xl font-bold text-white group-hover:text-accent transition-colors" data-i18n="vid1_title">Flat-Rack Heavy Machinery Lashing</h3>
-                                <p class="text-sm text-slate-300 mt-2" data-i18n="vid1_desc">Demonstration of high-tension lashing chains, timber blocking, and wire rope securing for out-of-gauge heavy machinery on flat-rack containers.</p>
-                            </div>
-                            <button class="btn btn-outlined btn-sm w-full mt-4 flex items-center justify-center gap-2" onclick="openVideoModal('assets/lashing/videos/5c0e59d5-9304-490f-9c64-19f76134bcf2.MP4', 'Flat-Rack Heavy Machinery Lashing')">
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        <div class="service-card-body" style="padding: 1.5rem;">
+                            <h3 data-i18n="vid1_title" style="color: #fff; margin-bottom: 0.5rem;">Flat-Rack Heavy Machinery Lashing</h3>
+                            <p data-i18n="vid1_desc" style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.25rem;">Demonstration of high-tension lashing chains, timber blocking, and wire rope securing for out-of-gauge heavy machinery on flat-rack containers.</p>
+                            <button class="btn btn-glowing" style="width: 100%; justify-content: center;" onclick="openVideoModal('assets/lashing/videos/5c0e59d5-9304-490f-9c64-19f76134bcf2.MP4', 'Flat-Rack Heavy Machinery Lashing')">
                                 <span data-i18n="btn_play_video">Play Video Demo</span>
                             </button>
                         </div>
                     </div>
 
-                    <!-- Video 2 -->
-                    <div class="video-card glass border border-light-15 rounded-2xl overflow-hidden shadow-2xl flex flex-col group">
-                        <div class="video-thumb relative overflow-hidden aspect-video bg-slate-950 cursor-pointer" onclick="openVideoModal('assets/lashing/videos/9cc1fce8-a33c-43e4-bd70-ac3b96d930dd.MP4', 'Steel Chain & Tensioner Securing Audit')">
-                            <video src="assets/lashing/videos/9cc1fce8-a33c-43e4-bd70-ac3b96d930dd.MP4" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" muted loop playsinline></video>
-                            <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-all flex items-center justify-center">
-                                <div class="w-16 h-16 rounded-full bg-accent text-slate-950 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                                    <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    <!-- Video Card 2 -->
+                    <div class="service-card glass video-card" style="padding: 0;">
+                        <div class="video-thumb" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000; cursor: pointer; overflow: hidden;" onclick="openVideoModal('assets/lashing/videos/9cc1fce8-a33c-43e4-bd70-ac3b96d930dd.MP4', 'Steel Chain & Turnbuckle Tension Audit')">
+                            <video src="assets/lashing/videos/9cc1fce8-a33c-43e4-bd70-ac3b96d930dd.MP4" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;" muted loop playsinline></video>
+                            <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;">
+                                <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--neon-teal); color: #020406; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 15px rgba(0,242,254,0.5);">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                                 </div>
                             </div>
-                            <span class="absolute top-4 right-4 bg-slate-950/80 text-accent text-xs font-mono px-2.5 py-1 rounded border border-accent/30 font-bold">HD VIDEO</span>
+                            <span style="position: absolute; top: 12px; right: 12px; background: rgba(2,4,6,0.85); color: var(--neon-teal); font-size: 0.65rem; font-weight: 700; padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(0,242,254,0.3);">HD VIDEO</span>
                         </div>
-                        <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-                            <div>
-                                <h3 class="text-xl font-bold text-white group-hover:text-accent transition-colors" data-i18n="vid2_title">Steel Chain & Turnbuckle Tension Audit</h3>
-                                <p class="text-sm text-slate-300 mt-2" data-i18n="vid2_desc">Field inspection of Grade 80 alloy steel lashing chains, turnbuckle locking pins, and tension safety checks for vessel bay stowage.</p>
-                            </div>
-                            <button class="btn btn-outlined btn-sm w-full mt-4 flex items-center justify-center gap-2" onclick="openVideoModal('assets/lashing/videos/9cc1fce8-a33c-43e4-bd70-ac3b96d930dd.MP4', 'Steel Chain & Turnbuckle Tension Audit')">
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        <div class="service-card-body" style="padding: 1.5rem;">
+                            <h3 data-i18n="vid2_title" style="color: #fff; margin-bottom: 0.5rem;">Steel Chain & Turnbuckle Tension Audit</h3>
+                            <p data-i18n="vid2_desc" style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.25rem;">Field inspection of Grade 80 alloy steel lashing chains, turnbuckle locking pins, and tension safety checks for vessel bay stowage.</p>
+                            <button class="btn btn-glowing" style="width: 100%; justify-content: center;" onclick="openVideoModal('assets/lashing/videos/9cc1fce8-a33c-43e4-bd70-ac3b96d930dd.MP4', 'Steel Chain & Turnbuckle Tension Audit')">
                                 <span data-i18n="btn_play_video">Play Video Demo</span>
                             </button>
                         </div>
@@ -359,148 +349,97 @@
         </section>
 
         <!-- PHOTO GALLERY LIGHTBOX SECTION -->
-        <section class="py-20 bg-slate-900/30 border-b border-light-10">
+        <section style="padding: 5rem 0; background: var(--bg-sec);">
             <div class="container">
-                <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
-                    <span class="text-accent text-sm font-semibold uppercase tracking-wider" data-i18n="gallery_tag">Field Inspection Gallery</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white" data-i18n="gallery_title">Lashing Inspection & Parts Gallery</h2>
-                    <p class="text-slate-400" data-i18n="gallery_desc">High-resolution inspection photos of lashing gear, container securing, and cargo tie-downs. Click any image to view in full resolution.</p>
+                <div class="text-center section-header" style="margin-bottom: 3rem;">
+                    <span class="section-tag glow-green" data-i18n="gallery_tag">Field Inspection Gallery</span>
+                    <h2 class="section-title" data-i18n="gallery_title">Lashing Inspection & Parts Gallery</h2>
+                    <p class="section-desc" data-i18n="gallery_desc">High-resolution inspection photos of lashing gear, container securing, and cargo tie-downs. Click any image to view in full resolution.</p>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="lashing-gallery">
-                    <div class="gallery-item overflow-hidden rounded-xl glass border border-light-10 cursor-pointer group h-60 relative" onclick="openLightbox('assets/lashing/images/32269468-fe03-4aa5-b7e1-0551c8ee1803.JPG', 'Lashing Belt Tension Audit')">
-                        <img src="assets/lashing/images/32269468-fe03-4aa5-b7e1-0551c8ee1803.JPG" alt="Lashing Inspection Photo 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-accent">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-                        </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem;" id="lashing-gallery">
+                    <div class="cert-card gallery-item" style="height: 200px; cursor: pointer;" onclick="openLightbox('assets/lashing/images/32269468-fe03-4aa5-b7e1-0551c8ee1803.JPG', 'Lashing Belt Tension Audit')">
+                        <img src="assets/lashing/images/32269468-fe03-4aa5-b7e1-0551c8ee1803.JPG" alt="Lashing Inspection Photo 1" class="cert-img">
                     </div>
-
-                    <div class="gallery-item overflow-hidden rounded-xl glass border border-light-10 cursor-pointer group h-60 relative" onclick="openLightbox('assets/lashing/images/3e5b80d6-63b1-4c66-8f35-9e65da902195.JPG', 'Turnbuckle & Wire Tie-Downs')">
-                        <img src="assets/lashing/images/3e5b80d6-63b1-4c66-8f35-9e65da902195.JPG" alt="Lashing Inspection Photo 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-accent">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-                        </div>
+                    <div class="cert-card gallery-item" style="height: 200px; cursor: pointer;" onclick="openLightbox('assets/lashing/images/3e5b80d6-63b1-4c66-8f35-9e65da902195.JPG', 'Turnbuckle & Wire Tie-Downs')">
+                        <img src="assets/lashing/images/3e5b80d6-63b1-4c66-8f35-9e65da902195.JPG" alt="Lashing Inspection Photo 2" class="cert-img">
                     </div>
-
-                    <div class="gallery-item overflow-hidden rounded-xl glass border border-light-10 cursor-pointer group h-60 relative" onclick="openLightbox('assets/lashing/images/6e4e9050-6aac-4bab-a33b-ff2f8b398626.JPG', 'Flat Rack Lashing Assembly')">
-                        <img src="assets/lashing/images/6e4e9050-6aac-4bab-a33b-ff2f8b398626.JPG" alt="Lashing Inspection Photo 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-accent">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-                        </div>
+                    <div class="cert-card gallery-item" style="height: 200px; cursor: pointer;" onclick="openLightbox('assets/lashing/images/6e4e9050-6aac-4bab-a33b-ff2f8b398626.JPG', 'Flat Rack Lashing Assembly')">
+                        <img src="assets/lashing/images/6e4e9050-6aac-4bab-a33b-ff2f8b398626.JPG" alt="Lashing Inspection Photo 3" class="cert-img">
                     </div>
-
-                    <div class="gallery-item overflow-hidden rounded-xl glass border border-light-10 cursor-pointer group h-60 relative" onclick="openLightbox('assets/lashing/images/76dbe5a0-0d14-455b-aa3a-054e1f5fd0f3.JPG', 'Heavy Duty Polyester Strapping')">
-                        <img src="assets/lashing/images/76dbe5a0-0d14-455b-aa3a-054e1f5fd0f3.JPG" alt="Lashing Inspection Photo 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-accent">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-                        </div>
+                    <div class="cert-card gallery-item" style="height: 200px; cursor: pointer;" onclick="openLightbox('assets/lashing/images/76dbe5a0-0d14-455b-aa3a-054e1f5fd0f3.JPG', 'Heavy Duty Polyester Strapping')">
+                        <img src="assets/lashing/images/76dbe5a0-0d14-455b-aa3a-054e1f5fd0f3.JPG" alt="Lashing Inspection Photo 4" class="cert-img">
                     </div>
-
-                    <div class="gallery-item overflow-hidden rounded-xl glass border border-light-10 cursor-pointer group h-60 relative" onclick="openLightbox('assets/lashing/images/7a4665e2-f232-43b7-9afd-ea6ad149b69a.JPG', 'Deck D-Ring Weld Audit')">
-                        <img src="assets/lashing/images/7a4665e2-f232-43b7-9afd-ea6ad149b69a.JPG" alt="Lashing Inspection Photo 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-accent">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-                        </div>
+                    <div class="cert-card gallery-item" style="height: 200px; cursor: pointer;" onclick="openLightbox('assets/lashing/images/7a4665e2-f232-43b7-9afd-ea6ad149b69a.JPG', 'Deck D-Ring Weld Audit')">
+                        <img src="assets/lashing/images/7a4665e2-f232-43b7-9afd-ea6ad149b69a.JPG" alt="Lashing Inspection Photo 5" class="cert-img">
                     </div>
-
-                    <div class="gallery-item overflow-hidden rounded-xl glass border border-light-10 cursor-pointer group h-60 relative" onclick="openLightbox('assets/lashing/images/899d5e60-1667-4061-a70e-6a58a3b001fc.JPG', 'Project Cargo Securing')">
-                        <img src="assets/lashing/images/899d5e60-1667-4061-a70e-6a58a3b001fc.JPG" alt="Lashing Inspection Photo 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-accent">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-                        </div>
+                    <div class="cert-card gallery-item" style="height: 200px; cursor: pointer;" onclick="openLightbox('assets/lashing/images/899d5e60-1667-4061-a70e-6a58a3b001fc.JPG', 'Project Cargo Securing')">
+                        <img src="assets/lashing/images/899d5e60-1667-4061-a70e-6a58a3b001fc.JPG" alt="Lashing Inspection Photo 6" class="cert-img">
                     </div>
-
-                    <div class="gallery-item overflow-hidden rounded-xl glass border border-light-10 cursor-pointer group h-60 relative" onclick="openLightbox('assets/lashing/images/957a0767-c68c-4215-a523-02644f08b1f1.JPG', 'Container Stowage Safety Inspection')">
-                        <img src="assets/lashing/images/957a0767-c68c-4215-a523-02644f08b1f1.JPG" alt="Lashing Inspection Photo 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-accent">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-                        </div>
+                    <div class="cert-card gallery-item" style="height: 200px; cursor: pointer;" onclick="openLightbox('assets/lashing/images/957a0767-c68c-4215-a523-02644f08b1f1.JPG', 'Container Stowage Safety Inspection')">
+                        <img src="assets/lashing/images/957a0767-c68c-4215-a523-02644f08b1f1.JPG" alt="Lashing Inspection Photo 7" class="cert-img">
                     </div>
-
-                    <div class="gallery-item overflow-hidden rounded-xl glass border border-light-10 cursor-pointer group h-60 relative" onclick="openLightbox('assets/lashing/images/a88b81f3-9dcf-41bd-91e7-96d9876e578a.JPG', 'Lashing Chain Grab Hook Test')">
-                        <img src="assets/lashing/images/a88b81f3-9dcf-41bd-91e7-96d9876e578a.JPG" alt="Lashing Inspection Photo 8" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-accent">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
-                        </div>
+                    <div class="cert-card gallery-item" style="height: 200px; cursor: pointer;" onclick="openLightbox('assets/lashing/images/a88b81f3-9dcf-41bd-91e7-96d9876e578a.JPG', 'Lashing Chain Grab Hook Test')">
+                        <img src="assets/lashing/images/a88b81f3-9dcf-41bd-91e7-96d9876e578a.JPG" alt="Lashing Inspection Photo 8" class="cert-img">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- SEALANDX LASHING PORTFOLIO SECTION (INTERACTIVE PDF SLIDER & DOWNLOAD) -->
-        <section id="portfolio-pdf" class="py-20 border-b border-light-10">
+        <section id="portfolio-pdf" style="padding: 5rem 0; background: transparent;">
             <div class="container">
-                <div class="glass-card border border-light-15 rounded-3xl p-8 md:p-12 relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900">
+                <div class="guide-wrapper glass" style="grid-template-columns: 1fr 1.2fr; gap: 3rem; padding: 2.5rem;">
                     
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                        <div class="lg:col-span-5 space-y-6">
-                            <span class="badge badge-accent" data-i18n="pdf_badge">Official Portfolio Document</span>
-                            <h2 class="text-3xl md:text-4xl font-bold text-white leading-tight" data-i18n="pdf_title">
-                                SeaLandX Lashing Services & Equipment Portfolio
-                            </h2>
-                            <p class="text-slate-300 text-sm leading-relaxed" data-i18n="pdf_desc">
-                                Access our official 8-page technical brochure detailing SeaLandX cargo securing methodologies, gear specifications, ISO certifications, and maritime surveyor qualifications.
-                            </p>
+                    <div class="blueprint-info-panel" style="padding: 0;">
+                        <span class="info-status-badge" style="margin-bottom: 0.75rem;"><span class="badge-dot green"></span> <span data-i18n="pdf_badge">Official Portfolio Document</span></span>
+                        <h2 class="info-title" data-i18n="pdf_title" style="font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1rem;">
+                            SeaLandX Lashing Services & Equipment Portfolio
+                        </h2>
+                        <p class="info-desc" data-i18n="pdf_desc" style="margin-bottom: 1.5rem;">
+                            Access our official 8-page technical brochure detailing SeaLandX cargo securing methodologies, gear specifications, ISO certifications, and maritime surveyor qualifications.
+                        </p>
 
-                            <div class="space-y-3 font-mono text-xs text-slate-300">
-                                <div class="flex items-center gap-3">
-                                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span data-i18n="pdf_feat1">8 Full Color Technical Pages</span>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span data-i18n="pdf_feat2">Complete Lashing Equipment Specifications</span>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span data-i18n="pdf_feat3">IMO & CS Code Calculation Standards</span>
-                                </div>
-                            </div>
+                        <ul class="info-checklist" style="margin-bottom: 2rem;">
+                            <li><span style="color: var(--neon-green);">✓</span> <span data-i18n="pdf_feat1">8 Full Color Technical Pages</span></li>
+                            <li><span style="color: var(--neon-green);">✓</span> <span data-i18n="pdf_feat2">Complete Lashing Equipment Specifications</span></li>
+                            <li><span style="color: var(--neon-green);">✓</span> <span data-i18n="pdf_feat3">IMO & CS Code Calculation Standards</span></li>
+                        </ul>
 
-                            <div class="pt-4 flex flex-wrap gap-4">
-                                <a href="assets/lashing/docs/sealandx_portfolio.pdf" download="SeaLandX_Lashing_Portfolio.pdf" class="btn btn-primary flex items-center gap-2">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                                    <span data-i18n="btn_download_pdf">Download PDF (4.8 MB)</span>
-                                </a>
-                                <a href="assets/lashing/docs/sealandx_portfolio.pdf" target="_blank" class="btn btn-outlined flex items-center gap-2">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                                    <span data-i18n="btn_open_pdf">Open PDF in Browser</span>
-                                </a>
-                            </div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                            <a href="assets/lashing/docs/sealandx_portfolio.pdf" download="SeaLandX_Lashing_Portfolio.pdf" class="btn btn-glowing">
+                                <span data-i18n="btn_download_pdf">Download PDF (4.8 MB)</span>
+                            </a>
+                            <a href="assets/lashing/docs/sealandx_portfolio.pdf" target="_blank" class="btn btn-primary" style="background: transparent; border: 1px solid var(--border-glass); color: #fff;">
+                                <span data-i18n="btn_open_pdf">Open PDF in Browser</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 8-Page Slide Preview -->
+                    <div class="pdf-viewer-container glass" style="padding: 1rem; border-radius: 16px; background: rgba(2,4,6,0.6);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-glass); font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+                            <span data-i18n="pdf_preview_title">BROCHURE PAGE PREVIEW</span>
+                            <span>PAGE <strong id="current-page-num" style="color: var(--neon-teal);">1</strong> OF 8</span>
                         </div>
 
-                        <!-- 8-Page Slide Preview -->
-                        <div class="lg:col-span-7">
-                            <div class="pdf-viewer-container glass border border-light-15 rounded-2xl p-4 bg-slate-950">
-                                <div class="flex items-center justify-between pb-3 border-b border-light-10 text-xs font-mono text-slate-400">
-                                    <span data-i18n="pdf_preview_title">BROCHURE PAGE PREVIEW</span>
-                                    <span>PAGE <span id="current-page-num" class="text-accent font-bold">1</span> OF 8</span>
-                                </div>
+                        <div style="position: relative; height: 320px; display: flex; align-items: center; justify-content: center; margin: 1rem 0; background: #000; border-radius: 8px; overflow: hidden;">
+                            <img id="pdf-slide-img" src="assets/lashing/docs/portfolio_pages/portfolio_page_1.jpg" alt="Portfolio Page Preview" style="max-height: 100%; max-width: 100%; object-contain: fit; transition: opacity 0.2s ease;">
+                            
+                            <button onclick="prevPdfPage()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; background: rgba(0,0,0,0.7); color: #fff; border: 1px solid var(--border-glass); cursor: pointer; font-size: 1.2rem;">&lsaquo;</button>
+                            <button onclick="nextPdfPage()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; background: rgba(0,0,0,0.7); color: #fff; border: 1px solid var(--border-glass); cursor: pointer; font-size: 1.2rem;">&rsaquo;</button>
+                        </div>
 
-                                <div class="relative overflow-hidden mt-3 rounded-lg h-[400px] flex items-center justify-center bg-slate-900">
-                                    <img id="pdf-slide-img" src="assets/lashing/docs/portfolio_pages/portfolio_page_1.jpg" alt="Portfolio Page Preview" class="max-h-full max-w-full object-contain rounded transition-all duration-300">
-                                    
-                                    <button class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-950/80 hover:bg-accent text-white hover:text-slate-950 flex items-center justify-center transition-all border border-light-10" onclick="prevPdfPage()" aria-label="Previous Page">
-                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                                    </button>
-
-                                    <button class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-950/80 hover:bg-accent text-white hover:text-slate-950 flex items-center justify-center transition-all border border-light-10" onclick="nextPdfPage()" aria-label="Next Page">
-                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                                    </button>
-                                </div>
-
-                                <!-- Page Thumbnails Row -->
-                                <div class="flex items-center gap-2 overflow-x-auto pt-3 pb-1" id="pdf-thumbs">
-                                    <img src="assets/lashing/docs/portfolio_pages/portfolio_page_1.jpg" class="pdf-thumb active" onclick="setPdfPage(1)">
-                                    <img src="assets/lashing/docs/portfolio_pages/portfolio_page_2.jpg" class="pdf-thumb" onclick="setPdfPage(2)">
-                                    <img src="assets/lashing/docs/portfolio_pages/portfolio_page_3.jpg" class="pdf-thumb" onclick="setPdfPage(3)">
-                                    <img src="assets/lashing/docs/portfolio_pages/portfolio_page_4.jpg" class="pdf-thumb" onclick="setPdfPage(4)">
-                                    <img src="assets/lashing/docs/portfolio_pages/portfolio_page_5.jpg" class="pdf-thumb" onclick="setPdfPage(5)">
-                                    <img src="assets/lashing/docs/portfolio_pages/portfolio_page_6.jpg" class="pdf-thumb" onclick="setPdfPage(6)">
-                                    <img src="assets/lashing/docs/portfolio_pages/portfolio_page_7.jpg" class="pdf-thumb" onclick="setPdfPage(7)">
-                                    <img src="assets/lashing/docs/portfolio_pages/portfolio_page_8.jpg" class="pdf-thumb" onclick="setPdfPage(8)">
-                                </div>
-                            </div>
+                        <!-- Page Thumbnails -->
+                        <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px;" id="pdf-thumbs">
+                            <img src="assets/lashing/docs/portfolio_pages/portfolio_page_1.jpg" class="pdf-thumb active" onclick="setPdfPage(1)">
+                            <img src="assets/lashing/docs/portfolio_pages/portfolio_page_2.jpg" class="pdf-thumb" onclick="setPdfPage(2)">
+                            <img src="assets/lashing/docs/portfolio_pages/portfolio_page_3.jpg" class="pdf-thumb" onclick="setPdfPage(3)">
+                            <img src="assets/lashing/docs/portfolio_pages/portfolio_page_4.jpg" class="pdf-thumb" onclick="setPdfPage(4)">
+                            <img src="assets/lashing/docs/portfolio_pages/portfolio_page_5.jpg" class="pdf-thumb" onclick="setPdfPage(5)">
+                            <img src="assets/lashing/docs/portfolio_pages/portfolio_page_6.jpg" class="pdf-thumb" onclick="setPdfPage(6)">
+                            <img src="assets/lashing/docs/portfolio_pages/portfolio_page_7.jpg" class="pdf-thumb" onclick="setPdfPage(7)">
+                            <img src="assets/lashing/docs/portfolio_pages/portfolio_page_8.jpg" class="pdf-thumb" onclick="setPdfPage(8)">
                         </div>
                     </div>
 
@@ -509,62 +448,56 @@
         </section>
 
         <!-- TECHNICAL ARTICLES & EDUCATIONAL TOPICS -->
-        <section class="py-20 border-b border-light-10 bg-slate-900/50">
+        <section style="padding: 5rem 0; background: var(--bg-sec);">
             <div class="container">
-                <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
-                    <span class="text-accent text-sm font-semibold uppercase tracking-wider" data-i18n="topics_tag">Technical Standards & Knowledge</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white" data-i18n="topics_title">Cargo Lashing Best Practices & Guidelines</h2>
-                    <p class="text-slate-400" data-i18n="topics_desc">Learn key formulas, safety regulations, and cargo securing principles enforced by SeaLandX marine surveyors.</p>
+                <div class="text-center section-header" style="margin-bottom: 3rem;">
+                    <span class="section-tag glow-teal" data-i18n="topics_tag">Technical Standards & Knowledge</span>
+                    <h2 class="section-title" data-i18n="topics_title">Cargo Lashing Best Practices & Guidelines</h2>
+                    <p class="section-desc" data-i18n="topics_desc">Learn key formulas, safety regulations, and cargo securing principles enforced by SeaLandX marine surveyors.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="articles-grid">
 
                     <!-- Topic 1 -->
-                    <div class="article-card glass border border-light-10 rounded-2xl p-6 flex flex-col justify-between space-y-4 hover:border-accent/40 transition-all">
-                        <div class="space-y-3">
-                            <span class="badge badge-accent" data-i18n="topic1_badge">Calculations & Tension</span>
-                            <h3 class="text-xl font-bold text-white" data-i18n="topic1_title">Calculating Lashing Capacity (LC) & MSL</h3>
-                            <p class="text-sm text-slate-300 leading-relaxed" data-i18n="topic1_text">
-                                Lashing Capacity (LC) measures the allowable force applied to securing equipment. According to IMO rules, the Maximum Securing Load (MSL) of chain lashing is calculated as 50% of Break Load, while webbing belts are rated at 50% of LC for sea transit safety.
-                            </p>
+                    <div class="article-card glass">
+                        <span class="article-tag" data-i18n="topic1_badge">Calculations & Tension</span>
+                        <div class="article-content">
+                            <h3 data-i18n="topic1_title">Calculating Lashing Capacity (LC) & MSL</h3>
+                            <p data-i18n="topic1_text">Lashing Capacity (LC) measures the allowable force applied to securing equipment. According to IMO rules, Maximum Securing Load (MSL) of chain lashing is calculated as 50% of Break Load, while webbing belts are rated at 50% of LC for sea transit safety.</p>
+                            <ul style="list-style: none; padding: 0; font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--border-glass); pt: 0.75rem;">
+                                <li>• <span data-i18n="topic1_point1">MSL = 50% Break Load (Chains & Wire)</span></li>
+                                <li>• <span data-i18n="topic1_point2">Safety Factor 2.0x Minimum Threshold</span></li>
+                                <li>• <span data-i18n="topic1_point3">Accelerations & Roll Angle Calculations</span></li>
+                            </ul>
                         </div>
-                        <ul class="text-xs text-slate-400 space-y-1.5 font-mono pt-4 border-t border-light-10">
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> <span data-i18n="topic1_point1">MSL = 50% Break Load (Chains & Wire)</span></li>
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> <span data-i18n="topic1_point2">Safety Factor 2.0x Minimum Threshold</span></li>
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> <span data-i18n="topic1_point3">Accelerations & Roll Angle Calculations</span></li>
-                        </ul>
                     </div>
 
                     <!-- Topic 2 -->
-                    <div class="article-card glass border border-light-10 rounded-2xl p-6 flex flex-col justify-between space-y-4 hover:border-accent/40 transition-all">
-                        <div class="space-y-3">
-                            <span class="badge badge-accent" data-i18n="topic2_badge">Flat Rack & OOG Cargo</span>
-                            <h3 class="text-xl font-bold text-white" data-i18n="topic2_title">Securing Out-of-Gauge (OOG) Heavy Loads</h3>
-                            <p class="text-sm text-slate-300 leading-relaxed" data-i18n="topic2_text">
-                                Over-dimensional machinery on Flat Rack containers requires symmetrical cross-lashing and diagonal tie-downs. Using anti-slip rubber mats increases the friction coefficient (µ ≥ 0.60), dramatically reducing the required number of lashing chains.
-                            </p>
+                    <div class="article-card glass">
+                        <span class="article-tag" data-i18n="topic2_badge">Flat Rack & OOG Cargo</span>
+                        <div class="article-content">
+                            <h3 data-i18n="topic2_title">Securing Out-of-Gauge (OOG) Heavy Loads</h3>
+                            <p data-i18n="topic2_text">Over-dimensional machinery on Flat Rack containers requires symmetrical cross-lashing and diagonal tie-downs. Using anti-slip rubber mats increases the friction coefficient (µ ≥ 0.60), dramatically reducing the required number of lashing chains.</p>
+                            <ul style="list-style: none; padding: 0; font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--border-glass); pt: 0.75rem;">
+                                <li>• <span data-i18n="topic2_point1">Cross-Lashing & Loop Lashing Geometry</span></li>
+                                <li>• <span data-i18n="topic2_point2">Hardwood Timber Chocks & Wedge Anchors</span></li>
+                                <li>• <span data-i18n="topic2_point3">Center of Gravity (CG) Height Checks</span></li>
+                            </ul>
                         </div>
-                        <ul class="text-xs text-slate-400 space-y-1.5 font-mono pt-4 border-t border-light-10">
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> <span data-i18n="topic2_point1">Cross-Lashing & Loop Lashing Geometry</span></li>
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> <span data-i18n="topic2_point2">Hardwood Timber Chocks & Wedge Anchors</span></li>
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> <span data-i18n="topic2_point3">Center of Gravity (CG) Height Checks</span></li>
-                        </ul>
                     </div>
 
                     <!-- Topic 3 -->
-                    <div class="article-card glass border border-light-10 rounded-2xl p-6 flex flex-col justify-between space-y-4 hover:border-accent/40 transition-all">
-                        <div class="space-y-3">
-                            <span class="badge badge-accent" data-i18n="topic3_badge">IMO CS Code Standard</span>
-                            <h3 class="text-xl font-bold text-white" data-i18n="topic3_title">Cargo Securing Manual (CSM) Compliance</h3>
-                            <p class="text-sm text-slate-300 leading-relaxed" data-i18n="topic3_text">
-                                SOLAS Chapter VI & VII mandate that all ships carry an approved Cargo Securing Manual (CSM). SeaLandX surveyors issue certified Lashing Survey Certificates confirming that cargo stowage meets SOLAS and CSS Code Annex 13 standards.
-                            </p>
+                    <div class="article-card glass">
+                        <span class="article-tag" data-i18n="topic3_badge">IMO CS Code Standard</span>
+                        <div class="article-content">
+                            <h3 data-i18n="topic3_title">Cargo Securing Manual (CSM) Compliance</h3>
+                            <p data-i18n="topic3_text">SOLAS Chapter VI & VII mandate that all ships carry an approved Cargo Securing Manual (CSM). SeaLandX surveyors issue certified Lashing Survey Certificates confirming that cargo stowage meets SOLAS and CSS Code Annex 13 standards.</p>
+                            <ul style="list-style: none; padding: 0; font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--border-glass); pt: 0.75rem;">
+                                <li>• <span data-i18n="topic3_point1">SOLAS VI/5 & VII/6 Compliance Audit</span></li>
+                                <li>• <span data-i18n="topic3_point2">CSS Code Annex 13 Calculation Rules</span></li>
+                                <li>• <span data-i18n="topic3_point3">Official Marine Surveyor Endorsement</span></li>
+                            </ul>
                         </div>
-                        <ul class="text-xs text-slate-400 space-y-1.5 font-mono pt-4 border-t border-light-10">
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> <span data-i18n="topic3_point1">SOLAS VI/5 & VII/6 Compliance Audit</span></li>
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> <span data-i18n="topic3_point2">CSS Code Annex 13 Calculation Rules</span></li>
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> <span data-i18n="topic3_point3">Official Marine Surveyor Endorsement</span></li>
-                        </ul>
                     </div>
 
                 </div>
@@ -572,32 +505,35 @@
         </section>
 
         <!-- LASHING REQUEST / QUOTE FORM SECTION -->
-        <section class="py-20 border-b border-light-10 relative">
-            <div class="container max-w-4xl">
-                <div class="glass-card border border-light-15 rounded-3xl p-8 md:p-12 relative shadow-2xl">
-                    <div class="text-center space-y-4 mb-8">
-                        <span class="text-accent text-sm font-semibold uppercase tracking-wider" data-i18n="form_lashing_tag">Order Lashing Gear & Services</span>
-                        <h2 class="text-3xl font-bold text-white" data-i18n="form_lashing_title">Request Lashing Equipment & Survey</h2>
-                        <p class="text-slate-400 text-sm" data-i18n="form_lashing_desc">Need certified lashing equipment supply or on-site marine lashing surveyors? Submit your inquiry below.</p>
+        <section style="padding: 5rem 0; background: transparent;">
+            <div class="container" style="max-width: 800px;">
+                <div class="contact-form-panel">
+                    <div class="text-center section-header" style="margin-bottom: 2rem;">
+                        <span class="section-tag glow-green" data-i18n="form_lashing_tag">Order Lashing Gear & Services</span>
+                        <h2 class="section-title" data-i18n="form_lashing_title">Request Lashing Equipment & Survey</h2>
+                        <p class="section-desc" data-i18n="form_lashing_desc">Need certified lashing equipment supply or on-site marine lashing surveyors? Submit your inquiry below.</p>
                     </div>
 
-                    <form id="lashing-request-form" class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <form id="lashing-request-form" class="contact-form" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2" data-i18n="form_lbl_name">Full Name</label>
-                                <input type="text" required class="input-field" data-i18n-placeholder="form_ph_name" placeholder="John Doe">
+                                <label class="form-label" data-i18n="form_lbl_name">Full Name</label>
+                                <input type="text" required class="form-input" data-i18n-placeholder="form_ph_name" placeholder="John Doe">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2" data-i18n="form_lbl_email">Email Address</label>
-                                <input type="email" required class="input-field" data-i18n-placeholder="form_ph_email" placeholder="john@company.com">
+                                <label class="form-label" data-i18n="form_lbl_email">Email Address</label>
+                                <input type="email" required class="form-input" data-i18n-placeholder="form_ph_email" placeholder="john@company.com">
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+                            <div>
+                                <label class="form-label" data-i18n="form_lbl_phone">Phone Number</label>
+                                <input type="tel" required class="form-input" data-i18n-placeholder="form_ph_phone" placeholder="+20 (12) 3456-7890">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2" data-i18n="form_lbl_phone">Phone Number</label>
-                                <input type="tel" required class="input-field" data-i18n-placeholder="form_ph_phone" placeholder="+20 (12) 3456-7890">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2" data-i18n="lbl_lashing_service_type">Inquiry Type</label>
-                                <select class="input-field">
+                                <label class="form-label" data-i18n="lbl_lashing_service_type">Inquiry Type</label>
+                                <select class="form-input">
                                     <option value="equipment_purchase" data-i18n="opt_equip_purchase">Purchase Lashing Equipment & Gear</option>
                                     <option value="lashing_service" data-i18n="opt_lashing_service">On-Site Vessel & Container Lashing Service</option>
                                     <option value="oog_calculation" data-i18n="opt_oog_calc">OOG Heavy Lift Lashing Calculation</option>
@@ -607,11 +543,11 @@
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2" data-i18n="form_lbl_msg">Request Details / Cargo Dimensions</label>
-                            <textarea rows="4" class="input-field" data-i18n-placeholder="ph_lashing_msg" placeholder="Specify required lashing gear quantities (belts, chains, turnbuckles), cargo weight, container type, or target port location..."></textarea>
+                            <label class="form-label" data-i18n="form_lbl_msg">Request Details / Cargo Dimensions</label>
+                            <textarea rows="4" class="form-input" data-i18n-placeholder="ph_lashing_msg" placeholder="Specify required lashing gear quantities (belts, chains, turnbuckles), cargo weight, container type, or target port location..."></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary w-full py-4 text-base font-bold tracking-wide uppercase" data-i18n="btn_submit_lashing">
+                        <button type="submit" class="btn btn-primary btn-block" style="padding: 1rem; font-size: 1rem;" data-i18n="btn_submit_lashing">
                             Submit Lashing Inquiry
                         </button>
                     </form>
@@ -620,89 +556,83 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 border-t border-light-10 py-16 text-sm text-slate-400">
-        <div class="container">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-                <div class="space-y-4">
-                    <a href="index.html" class="brand-logo">
-                        <span class="logo-mark">SLX</span>
-                        <span class="logo-title text-white">SeaLand<span class="text-accent">X</span></span>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Branding column -->
+                <div class="footer-col-brand">
+                    <a href="index.html" class="logo-container">
+                        <img src="assets/images/logo.png" alt="SeaLandX" class="logo-img footer-logo-img">
                     </a>
-                    <p class="text-xs leading-relaxed" data-i18n="footer_brand_desc">Globally trusted marine cargo surveys, lashing equipment supply, container seal audits, and logistics security assessments.</p>
+                    <p class="brand-desc" data-i18n="footer_brand_desc">Globally trusted marine cargo surveys, container seal audits, and logistics security assessments.</p>
                 </div>
-
-                <div>
-                    <h4 class="text-white font-bold mb-4" data-i18n="footer_col1_header">Quick Links</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="index.html" class="hover:text-accent transition-colors" data-i18n="nav_home">Home</a></li>
-                        <li><a href="services.html" class="hover:text-accent transition-colors" data-i18n="nav_services">Services</a></li>
-                        <li><a href="lashing.html" class="text-accent font-bold" data-i18n="nav_lashing">Lashing Parts & Equipment</a></li>
-                        <li><a href="guide.html" class="hover:text-accent transition-colors" data-i18n="nav_guide">7-Point Guide</a></li>
-                        <li><a href="certifications.html" class="hover:text-accent transition-colors" data-i18n="nav_certifications">Certifications</a></li>
-                        <li><a href="articles.html" class="hover:text-accent transition-colors" data-i18n="nav_articles">Articles</a></li>
-                        <li><a href="contact.html" class="hover:text-accent transition-colors" data-i18n="nav_contact">Contact Us</a></li>
+                <!-- Links column 1 -->
+                <div class="footer-col-links">
+                    <h4 data-i18n="footer_col1_header">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">Home Dashboard</a></li>
+                        <li><a href="services.html" data-i18n="nav_services">Inspection Services</a></li>
+                        <li><a href="lashing.html" data-i18n="nav_lashing">Lashing Parts & Equipment</a></li>
+                        <li><a href="guide.html" data-i18n="nav_guide">7-Point Standard</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">Global Profile</a></li>
                     </ul>
                 </div>
-
-                <div>
-                    <h4 class="text-white font-bold mb-4" data-i18n="footer_col2_header">Certifications</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="certifications.html" class="hover:text-accent transition-colors" data-i18n="cert_iicl">IICL Container Inspections</a></li>
-                        <li><a href="certifications.html" class="hover:text-accent transition-colors" data-i18n="cert_iso">ISO 668 & 1496 Audits</a></li>
-                        <li><a href="lashing.html" class="hover:text-accent transition-colors" data-i18n="cert_lashing">Cargo Lashing & Tie-downs</a></li>
-                        <li><a href="services.html" class="hover:text-accent transition-colors" data-i18n="cert_psi">Pre-Shipment Inspections</a></li>
+                <!-- Links column 2 -->
+                <div class="footer-col-links">
+                    <h4 data-i18n="footer_col2_header">Certifications</h4>
+                    <ul>
+                        <li><a href="services.html" data-i18n="cert_iicl">IICL Container Inspections</a></li>
+                        <li><a href="services.html" data-i18n="cert_iso">ISO 668 & 1496 Audits</a></li>
+                        <li><a href="services.html" data-i18n="cert_psi">Pre-Shipment Inspections</a></li>
+                        <li><a href="services.html" data-i18n="cert_reefer">Reefer Cold Chain Logs</a></li>
+                        <li><a href="lashing.html" data-i18n="cert_lashing">Cargo Lashing & Tie-downs</a></li>
+                        <li><a href="services.html" data-i18n="cert_empty">Empty Container Sweeps</a></li>
                     </ul>
                 </div>
-
-                <div>
-                    <h4 class="text-white font-bold mb-4" data-i18n="footer_col3_header">Logistics Bulletins</h4>
-                    <p class="text-xs mb-3" data-i18n="footer_news_desc">Subscribe to receive regulatory safety updates directly in your inbox.</p>
-                    <div class="flex gap-2">
-                        <input type="email" class="input-field text-xs py-2 px-3" data-i18n-placeholder="footer_news_ph" placeholder="email@company.com">
-                        <button class="btn btn-primary text-xs py-2 px-4" data-i18n="footer_news_btn">Join</button>
-                    </div>
+                <!-- Newsletter column -->
+                <div class="footer-col-news">
+                    <h4 data-i18n="footer_col3_header">Logistics Bulletins</h4>
+                    <p data-i18n="footer_news_desc">Subscribe to receive regulatory safety updates directly in your inbox.</p>
+                    <form class="footer-news-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" placeholder="email@company.com" data-i18n-placeholder="footer_news_ph" required>
+                        <button type="submit" class="btn btn-primary" data-i18n="footer_news_btn">Join</button>
+                    </form>
                 </div>
             </div>
-
-            <div class="pt-8 border-t border-light-10 flex flex-col md:flex-row justify-between items-center text-xs gap-4">
-                <p data-i18n="footer_copyright">&copy; 2026 SeaLandX. All rights reserved. Designed for international safety compliance.</p>
-                <div class="flex gap-6">
-                    <a href="#" class="hover:text-accent" data-i18n="footer_privacy">Privacy Policy</a>
-                    <a href="#" class="hover:text-accent" data-i18n="footer_terms">Terms of Service</a>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SeaLandX. <span data-i18n="footer_copyright">All rights reserved. Designed for international safety compliance.</span></p>
+                <div class="footer-legal">
+                    <a href="index.html" data-i18n="footer_privacy">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="index.html" data-i18n="footer_terms">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- VIDEO MODAL POPUP -->
-    <div id="video-modal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
-        <div class="relative w-full max-w-4xl glass border border-light-15 rounded-2xl overflow-hidden shadow-2xl">
-            <div class="flex items-center justify-between p-4 border-b border-light-10 bg-slate-900">
-                <h3 id="video-modal-title" class="text-lg font-bold text-white">Video Demonstration</h3>
-                <button onclick="closeVideoModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-accent text-white hover:text-slate-950 flex items-center justify-center transition-colors">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                </button>
-            </div>
-            <div class="aspect-video bg-black">
-                <video id="modal-video-element" controls class="w-full h-full object-contain"></video>
+    <!-- Video Modal Popup -->
+    <div id="video-modal" class="cert-modal" onclick="closeVideoModal()">
+        <span class="cert-modal-close" onclick="closeVideoModal()">&times;</span>
+        <div class="cert-modal-content" onclick="event.stopPropagation()" style="max-width: 800px; padding: 1rem; background: #020406; border-radius: 16px;">
+            <h3 id="video-modal-title" style="color: #fff; font-size: 1.1rem; margin-bottom: 0.75rem; font-family: var(--font-heading);">Video Demonstration</h3>
+            <div style="aspect-ratio: 16/9; background: #000; border-radius: 8px; overflow: hidden;">
+                <video id="modal-video-element" controls style="width: 100%; height: 100%; object-fit: contain;"></video>
             </div>
         </div>
     </div>
 
-    <!-- IMAGE LIGHTBOX MODAL -->
-    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4" onclick="closeLightbox()">
-        <div class="relative max-w-5xl max-h-[90vh] p-2" onclick="event.stopPropagation()">
-            <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white hover:text-accent text-sm font-bold flex items-center gap-1 bg-slate-900/80 px-3 py-1.5 rounded-full border border-light-10">
-                <span>Close</span>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <img id="lightbox-img" src="" alt="High-Res Image" class="max-w-full max-h-[85vh] object-contain rounded-xl border border-light-15 shadow-2xl">
-            <p id="lightbox-caption" class="text-center text-slate-300 text-sm mt-3 font-mono"></p>
+    <!-- Image Lightbox Modal -->
+    <div id="lightbox-modal" class="cert-modal" onclick="closeLightbox()">
+        <span class="cert-modal-close" onclick="closeLightbox()">&times;</span>
+        <div class="cert-modal-content" onclick="event.stopPropagation()" style="max-width: 900px; text-align: center;">
+            <img id="lightbox-img" src="" alt="High-Res Image" style="max-width: 100%; max-height: 80vh; border-radius: 12px; object-fit: contain;">
+            <p id="lightbox-caption" style="color: var(--neon-teal); font-family: var(--font-mono); margin-top: 0.75rem; font-size: 0.9rem;"></p>
         </div>
     </div>
 
-    <!-- Core Script -->
+    <!-- Main JavaScript behavior script -->
     <script src="js/main.js" defer></script>
 </body>
 </html>
