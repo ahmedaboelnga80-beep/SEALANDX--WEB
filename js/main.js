@@ -22,6 +22,128 @@ document.addEventListener('DOMContentLoaded', () => {
         en: {
             page_title: "SeaLandX | Your Partner for Endless Solutions",
             logo_subtitle: "Integrated Logistics Services",
+            nav_lashing: "Lashing Parts",
+            title_lashing: "SeaLandX | Cargo Lashing Equipment, Parts & Securing Catalog",
+            lashing_hero_badge: "Marine & Cargo Securing Gear Catalog",
+            lashing_hero_title: 'Cargo Lashing <br><span class="text-gradient">Equipment & Parts</span>',
+            lashing_hero_desc: "Explore our comprehensive catalog of certified marine lashing equipment, heavy-duty ratchet straps, forged steel turnbuckles, lashing chains, container twistlocks, dunnage air bags, and corner protectors. Download our technical portfolio PDF and watch field video demonstrations.",
+            btn_explore_parts: "Explore Parts Catalog",
+            btn_watch_videos: "Watch Video Demos",
+            btn_download_portfolio_hero: "Portfolio PDF",
+            stat_lashing_iso: "ISO & IMO Compliant",
+            stat_lashing_capacity: "Heavy Lashing Load",
+            stat_lashing_grade: "Certified Alloy Steel",
+            badge_featured_gear: "Heavy Duty Securing",
+            hero_card_title: "On-Site Vessel & Container Lashing",
+            hero_card_desc: "Certified tie-down verification for Flat Racks, Breakbulk, and Heavy Machinery.",
+            catalog_tag: "Equipment Catalog",
+            catalog_title: "Cargo Lashing Parts & Accessories",
+            catalog_desc: "Browse high-capacity lashing gear engineered for extreme marine environments and heavy transport.",
+            filter_all: "All Parts",
+            filter_straps: "Belts & Straps",
+            filter_binders: "Turnbuckles & Binders",
+            filter_chains: "Lashing Chains",
+            filter_twistlocks: "Twistlocks & Deck Fittings",
+            filter_dunnage: "Dunnage Bags & Protection",
+            cat_straps: "Belts & Straps",
+            cat_binders: "Turnbuckles",
+            cat_chains: "Chains",
+            cat_deck: "Deck Fittings",
+            cat_twistlocks: "Twistlocks",
+            cat_dunnage: "Dunnage Bags",
+            cat_protection: "Protection",
+            cat_blocking: "Friction & Blocking",
+            part1_title: "Heavy-Duty Polyester Lashing Belts",
+            part1_desc: "High-tenacity 100% polyester webbing straps equipped with ergonomic ratchet buckles and claw hooks for heavy container cargo securing.",
+            lbl_capacity: "Lashing Capacity (LC):",
+            lbl_width: "Width:",
+            lbl_standard: "Standard:",
+            part2_title: "Drop Forged Turnbuckles & Ratchet Binders",
+            part2_desc: "Heavy duty tensioning binders with jaw-and-eye or hook ends designed for steel wire rope and lashing chain assemblies on vessel decks.",
+            lbl_break_load: "Break Load:",
+            lbl_material: "Material:",
+            lbl_finish: "Finish:",
+            part3_title: "Grade 80/100 Alloy Lashing Chains",
+            part3_desc: "High strength alloy lashing chain assemblies with clevis grab hooks and shortening clutches for heavy machinery, steel coils, and project cargo.",
+            lbl_chain_size: "Chain Dia:",
+            lbl_lashing_capacity: "Lashing Cap:",
+            lbl_grade: "Grade:",
+            part4_title: "Weldable D-Rings & Floor Lashing Points",
+            part4_desc: "Forged steel D-rings with weld-on strap plates for vessel decks, flat rack floors, and trailer chassis anchor points.",
+            lbl_breaking_strength: "MBL:",
+            lbl_type: "Type:",
+            lbl_cert: "Certification:",
+            part5_title: "Container Twistlocks & Bridge Fittings",
+            part5_desc: "Manual and semi-automatic twistlocks, stacking cones, and bridge clamps designed to lock container corner castings securely on vessel bays.",
+            lbl_shear_load: "Shear Load:",
+            lbl_tension_load: "Tension Load:",
+            lbl_operation: "Operation:",
+            part6_title: "Inflatable Cargo Dunnage Air Bags",
+            part6_desc: "Kraft paper and woven polypropylene inflatable dunnage bags designed to fill container voids, prevent cargo shifts, and absorb sea shocks.",
+            lbl_pressure: "Max Pressure:",
+            lbl_ply: "Structure:",
+            lbl_valve: "Valve:",
+            part7_title: "Heavy-Duty Corner Edge Protectors",
+            part7_desc: "High-density plastic corner guards preventing strap friction wear and protecting cargo edges from crush deformation during tensioning.",
+            lbl_material_p: "Material:",
+            lbl_compatibility: "Fits Straps:",
+            lbl_durability: "Feature:",
+            part8_title: "Anti-Slip Rubber Mats & Wooden Chocks",
+            part8_desc: "High friction rubber pads (µ ≥ 0.6) combined with hardwood blocking wedges for heavy machinery wheels and steel coil cradles.",
+            lbl_friction: "Friction (µ):",
+            lbl_thickness: "Thickness:",
+            lbl_wood: "Wood Grade:",
+            video_tag: "Video Showcase",
+            video_title: "Cargo Lashing Field Operations",
+            video_desc: "Watch our certified lashing team performing heavy cargo securing, chain tension testing, and container tie-down audits in real port environments.",
+            vid1_title: "Flat-Rack Heavy Machinery Lashing",
+            vid1_desc: "Demonstration of high-tension lashing chains, timber blocking, and wire rope securing for out-of-gauge heavy machinery on flat-rack containers.",
+            btn_play_video: "Play Video Demo",
+            vid2_title: "Steel Chain & Turnbuckle Tension Audit",
+            vid2_desc: "Field inspection of Grade 80 alloy steel lashing chains, turnbuckle locking pins, and tension safety checks for vessel bay stowage.",
+            gallery_tag: "Field Inspection Gallery",
+            gallery_title: "Lashing Inspection & Parts Gallery",
+            gallery_desc: "High-resolution inspection photos of lashing gear, container securing, and cargo tie-downs. Click any image to view in full resolution.",
+            pdf_badge: "Official Portfolio Document",
+            pdf_title: "SeaLandX Lashing Services & Equipment Portfolio",
+            pdf_desc: "Access our official 8-page technical brochure detailing SeaLandX cargo securing methodologies, gear specifications, ISO certifications, and maritime surveyor qualifications.",
+            pdf_feat1: "8 Full Color Technical Pages",
+            pdf_feat2: "Complete Lashing Equipment Specifications",
+            pdf_feat3: "IMO & CS Code Calculation Standards",
+            btn_download_pdf: "Download PDF (4.8 MB)",
+            btn_open_pdf: "Open PDF in Browser",
+            pdf_preview_title: "BROCHURE PAGE PREVIEW",
+            topics_tag: "Technical Standards & Knowledge",
+            topics_title: "Cargo Lashing Best Practices & Guidelines",
+            topics_desc: "Learn key formulas, safety regulations, and cargo securing principles enforced by SeaLandX marine surveyors.",
+            topic1_badge: "Calculations & Tension",
+            topic1_title: "Calculating Lashing Capacity (LC) & MSL",
+            topic1_text: "Lashing Capacity (LC) measures the allowable force applied to securing equipment. According to IMO rules, the Maximum Securing Load (MSL) of chain lashing is calculated as 50% of Break Load, while webbing belts are rated at 50% of LC for sea transit safety.",
+            topic1_point1: "MSL = 50% Break Load (Chains & Wire)",
+            topic1_point2: "Safety Factor 2.0x Minimum Threshold",
+            topic1_point3: "Accelerations & Roll Angle Calculations",
+            topic2_badge: "Flat Rack & OOG Cargo",
+            topic2_title: "Securing Out-of-Gauge (OOG) Heavy Loads",
+            topic2_text: "Over-dimensional machinery on Flat Rack containers requires symmetrical cross-lashing and diagonal tie-downs. Using anti-slip rubber mats increases the friction coefficient (µ ≥ 0.60), dramatically reducing the required number of lashing chains.",
+            topic2_point1: "Cross-Lashing & Loop Lashing Geometry",
+            topic2_point2: "Hardwood Timber Chocks & Wedge Anchors",
+            topic2_point3: "Center of Gravity (CG) Height Checks",
+            topic3_badge: "IMO CS Code Standard",
+            topic3_title: "Cargo Securing Manual (CSM) Compliance",
+            topic3_text: "SOLAS Chapter VI & VII mandate that all ships carry an approved Cargo Securing Manual (CSM). SeaLandX surveyors issue certified Lashing Survey Certificates confirming that cargo stowage meets SOLAS and CSS Code Annex 13 standards.",
+            topic3_point1: "SOLAS VI/5 & VII/6 Compliance Audit",
+            topic3_point2: "CSS Code Annex 13 Calculation Rules",
+            topic3_point3: "Official Marine Surveyor Endorsement",
+            form_lashing_tag: "Order Lashing Gear & Services",
+            form_lashing_title: "Request Lashing Equipment & Survey",
+            form_lashing_desc: "Need certified lashing equipment supply or on-site marine lashing surveyors? Submit your inquiry below.",
+            lbl_lashing_service_type: "Inquiry Type",
+            opt_equip_purchase: "Purchase Lashing Equipment & Gear",
+            opt_lashing_service: "On-Site Vessel & Container Lashing Service",
+            opt_oog_calc: "OOG Heavy Lift Lashing Calculation",
+            opt_lashing_cert: "Lashing Survey Certification",
+            ph_lashing_msg: "Specify required lashing gear quantities (belts, chains, turnbuckles), cargo weight, container type, or target port location...",
+            btn_submit_lashing: "Submit Lashing Inquiry",
             nav_home: "Home", nav_services: "Services",
             nav_guide: "7-Point Guide", nav_about: "About Us",
             nav_certifications: "Certifications", nav_articles: "Articles",
@@ -205,6 +327,128 @@ document.addEventListener('DOMContentLoaded', () => {
         ar: {
             page_title: "سي لاند إكس | شريكك لحلول لا حصر لها",
             logo_subtitle: "الخدمات اللوجستية المتكاملة",
+            nav_lashing: "أجزاء ومعدات اللاشينج",
+            title_lashing: "سي لاند إكس | كتالوج وتجهيزات أجزاء ومعدات اللاشينج وتثبيت البضائع",
+            lashing_hero_badge: "كتالوج معدات وتجهيزات اللاشينج والتثبيت البحري",
+            lashing_hero_title: 'أجزاء ومعدات <br><span class="text-gradient">لاشينج وتثبيت البضائع</span>',
+            lashing_hero_desc: "استكشف الكتالوج الشامل لمعدات اللاشينج المعتمدة: أحزمة التثبيت عالية الشد، الشدادات الفولاذية، سلاسل التثبيت الثقيلة، أقفال الحاويات Twistlocks، أكياس التثبيت الهوائية، وواقيات الحواف والزوايا. قم بتحميل كتالوج الشركة PDF ومشاهدة فيديوهات التثبيت الحية.",
+            btn_explore_parts: "استكشف كتالوج الأجزاء",
+            btn_watch_videos: "مشاهدة الفيديوهات الحية",
+            btn_download_portfolio_hero: "تحميل البرتفوليو PDF",
+            stat_lashing_iso: "مطابق لمعايير ISO & IMO",
+            stat_lashing_capacity: "قوة شد حتى 10,000+ daN",
+            stat_lashing_grade: "صلب سبائكي معتمد Grade 80/100",
+            badge_featured_gear: "تثبيت وتربيط شحنات ثقيلة",
+            hero_card_title: "عمليات اللاشينج للسفن والحاويات",
+            hero_card_desc: "توثيق وفحص أربطة وسلاسل التثبيت للحاويات المسطحة (Flat Rack) والشحنات الثقيلة.",
+            catalog_tag: "كتالوج التجهيزات والأجزاء",
+            catalog_title: "أجزاء ومعدات اللاشينج وتثبيت الشحنات",
+            catalog_desc: "تصفح أحدث معدات اللاشينج المصممة للتحمل الشديد في البيئات البحرية والنقل الثقيل.",
+            filter_all: "جميع الأجزاء",
+            filter_straps: "الأحزمة والأربطة",
+            filter_binders: "الشدادات والقمطات",
+            filter_chains: "سلاسل اللاشينج",
+            filter_twistlocks: "أقفال ومرابط الحاويات",
+            filter_dunnage: "أكياس وواقيات التثبيت",
+            cat_straps: "أحزمة وأربطة",
+            cat_binders: "شدادات صلبة",
+            cat_chains: "سلاسل تثبيت",
+            cat_deck: "مرابط سطح",
+            cat_twistlocks: "أقفال حاويات",
+            cat_dunnage: "وسائد هوائية",
+            cat_protection: "واقيات حواف",
+            cat_blocking: "مانع انزلاق وخشب",
+            part1_title: "أحزمة وأربطة اللاشينج الفائقة الشد",
+            part1_desc: "أحزمة بوليستر 100% عالية المتانة مزودة بقمم شد (Ratchet) وخطاطيف مزدوجة لتثبيت الشحنات الثقيلة داخل الحاويات وعلى الرفوف.",
+            lbl_capacity: "قوة الشد (LC):",
+            lbl_width: "العرض:",
+            lbl_standard: "المعيار الدولي:",
+            part2_title: "الشدادات والقمطات الصلبة (Turnbuckles)",
+            part2_desc: "شدادات صلبة معالجة حرارياً بأطراف شوكية أو خطاطيف مخصصة لتأمين أسلاك الصلب وسلاسل اللاشينج على أسطح السفن.",
+            lbl_break_load: "حمل الكسر (Break Load):",
+            lbl_material: "خامة التصنيع:",
+            lbl_finish: "المعالجة:",
+            part3_title: "سلاسل اللاشينج عالية المقاومة (Grade 80/100)",
+            part3_desc: "تجميعات سلاسل صلب سبائكي فائقة المقاومة مزودة بخطاطيف تقصير وتثبيت للمعدات الثقيلة، لفيات الصلب، وشحنات المشاريع.",
+            lbl_chain_size: "قطر السلسلة:",
+            lbl_lashing_capacity: "قوة شد السلسلة:",
+            lbl_grade: "درجة الصلب:",
+            part4_title: "حلقات ومرابط التثبيت بالسطح (D-Rings)",
+            part4_desc: "حلقات D-Ring صلب مطروق قابلة للحام على أسطح السفن وقواعد الحاويات المسطحة لتوفر نقاط تثبيت فائقة القوة.",
+            lbl_breaking_strength: "أقصى حمل كسر:",
+            lbl_type: "النوع:",
+            lbl_cert: "الشهادة البحرية:",
+            part5_title: "أقفال الحاويات والوصلات البينية (Twistlocks)",
+            part5_desc: "أقفال حاويات يدوية ونصف أوتوماتيكية، ومخاريط التجميع، وقمطات التثبيت البينية لتأمين الحاويات على عنابر السفن.",
+            lbl_shear_load: "قوة القص (Shear):",
+            lbl_tension_load: "قوة الشد (Tension):",
+            lbl_operation: "آلية التشغيل:",
+            part6_title: "أكياس ووسائد التثبيت الهوائية (Dunnage Bags)",
+            part6_desc: "أكياس تثبيت هوائية مصنعة من ورق الكرافت والبولي بروبيلين لملء الفراغات بين البضائع ومنع الانزلاق وامتصاص الصدمات.",
+            lbl_pressure: "أقصى ضغط تشغيل:",
+            lbl_ply: "طبقات التصنيع:",
+            lbl_valve: "صمام النفخ:",
+            part7_title: "واقيات الزوايا وحواية الأربطة (Corner Protectors)",
+            part7_desc: "واقيات حواف زوايا بلاستيكية عالية الكثافة تحمي أربطة اللاشينج من التآكل وتمنع انغراس الحزام في أطراف البضاعة.",
+            lbl_material_p: "الخامة:",
+            lbl_compatibility: "تناسب أحزمة بعرض:",
+            lbl_durability: "الميزة:",
+            part8_title: "وسائد المطاط المانعة للانزلاق وأخشاب التثبيت",
+            part8_desc: "شرائح مطاطية عالية الاحتكاك (µ ≥ 0.6) مع كتل وأوتاد خشبية صلبة لتثبيت عجلات الآليات الثقيلة وقواعد البضائع.",
+            lbl_friction: "معامل الاحتكاك (µ):",
+            lbl_thickness: "السمك:",
+            lbl_wood: "درجة الخشب:",
+            video_tag: "معرض الفيديوهات الحية",
+            video_title: "عمليات اللاشينج الميدانية",
+            video_desc: "شاهد فريق اللاشينج المعتمد أثناء تنفيذ عمليات تثبيت البضائع الثقيلة، وااختبارات شد السلاسل، وتدقيق سلامة الحاويات في الموانئ.",
+            vid1_title: "تثبيت الآليات الثقيلة على الحاويات المسطحة",
+            vid1_desc: "فيديو توثيقي لعملية استخدام سلاسل اللاشينج عالية الشد والأخشاب لتأمين المعدات الثقيلة خارج الأبعاد (OOG).",
+            btn_play_video: "تشغيل عرض الفيديو",
+            vid2_title: "اختبار قوة شد السلاسل والشدادات الفولاذية",
+            vid2_desc: "معاينة ميدانية لعمل فحص شد السلاسل الصلبة Grade 80 والشدادات ومسامير الأمان لضمان سلامة الإبحار.",
+            gallery_tag: "معرض الفحص الميداني",
+            gallery_title: "معرض صور المعاينات وأجزاء اللاشينج",
+            gallery_desc: "صور عالية الدقة لمعاينات معدات اللاشينج وتأمين الحاويات للبحر. انقر على أي صورة لفتحها بدقة كاملة.",
+            pdf_badge: "الكتالوج والبرتفوليو الرسمي",
+            pdf_title: "برتفوليو خدمات ومعدات اللاشينج - سي لاند إكس",
+            pdf_desc: "استعرض الكتالوج الفني الرسمي المتكون من 8 صفحات والذي يوضح منهجية سي لاند إكس، مواصفات المعدات، وشهادات الأيزو والاعتمادات البحرية.",
+            pdf_feat1: "٨ صفحات فنية بالكامل عالية الدقة",
+            pdf_feat2: "مواصفات وتفاصيل معدات اللاشينج",
+            pdf_feat3: "معايير حسابات اللاشينج طبقاً لـ IMO & CS Code",
+            btn_download_pdf: "تحميل ملف PDF (٤.٨ ميجابايت)",
+            btn_open_pdf: "فتح الملف في المتصفح",
+            pdf_preview_title: "معاينة صفحات الكتالوج الفني",
+            topics_tag: "المعايير والمعرفة الفنية",
+            topics_title: "أفضل ممارسات وقواعد لاشينج البضائع",
+            topics_desc: "تعرف على المعادلات الأساسية، لوائح السلامة، ومبادئ تثبيت الشحنات المعتمدة من مساحي سي لاند إكس.",
+            topic1_badge: "الحسابات وقوة الشد",
+            topic1_title: "حساب قوة الشد (LC) وحمل الأمان (MSL)",
+            topic1_text: "تقيس سعة اللاشينج (LC) أقصى قوة مسموح بها. طبقاً لقواعد IMO، يُحسب حمل الأمان الأقصى (MSL) لسلاسل اللاشينج بنسبة 50% من حمل الكسر، بينما تُحسب أحزمة النسيج بنسبة 50% من قوة الشد لضمان سلامة الإبحار.",
+            topic1_point1: "MSL = 50% من حمل الكسر (للسلاسل والأسلاك)",
+            topic1_point2: "معامل أمان لا يقل عن 2.0x",
+            topic1_point3: "حسابات التسارع وزاوية ميل السفينة",
+            topic2_badge: "الشحنات الثقيلة وFlat Rack",
+            topic2_title: "تثبيت الشحنات ضخمة الأبعاد (OOG)",
+            topic2_text: "تتطلب الآليات ضخمة الأبعاد على الحاويات المسطحة (Flat Rack) تربيطاً متماثلاً وتقاطعياً. يساهم استخدام المطاط المانع للانزلاق (µ ≥ 0.60) في تقليل عدد سلاسل اللاشينج المطلوبة بشكل كبير.",
+            topic2_point1: "هندسة التربيط المتقاطع والتطويق",
+            topic2_point2: "أوتاد وكتل الخشب الصلب MBL",
+            topic2_point3: "فحص وارتفاع مركز الثقل (CG)",
+            topic3_badge: "معيار IMO CS Code",
+            topic3_title: "الالتزام بدليل تثبيت البضائع (CSM)",
+            topic3_text: "تنص اتفاقية SOLAS (الفصل 6 و7) على وجوب حمل جميع السفن لدليل تثبيت بضائع معتمد (CSM). يصدر مساحو سي لاند إكس شهادات معاينة لاشينج تؤكد امتثال التثبيت لمعايير SOLAS و CSS Code Annex 13.",
+            topic3_point1: "تدقيق الامتثال لـ SOLAS VI/5 & VII/6",
+            topic3_point2: "قواعد حسابات CSS Code Annex 13",
+            topic3_point3: "اعتماد رسمي من مساح بحري متخصص",
+            form_lashing_tag: "طلب شراء معدات أو خدمات لاشينج",
+            form_lashing_title: "طلب معاينة ومعدات لاشينج",
+            form_lashing_desc: "هل تحتاج لتوريد معدات لاشينج معتمدة أو إيفاد مساحين بحريين للتثبيت الموقع؟ قدم طلبك أدناه.",
+            lbl_lashing_service_type: "نوع الطلب المطلوب",
+            opt_equip_purchase: "شراء وتوريد معدات وأجزاء اللاشينج",
+            opt_lashing_service: "خدمة تثبيت وتربيط الشحنات بالسفينة والميناء",
+            opt_oog_calc: "حسابات لاشينج وشحنات ثقيلة OOG",
+            opt_lashing_cert: "إصدار شهادات معاينة لاشينج معتمدة",
+            ph_lashing_msg: "يرجى تحديد الكميات المطلوبة (أحزمة، سلاسل، شدادات)، أوزان الشحنة، نوع الحاوية، أو موقع ميناء المعاينة...",
+            btn_submit_lashing: "إرسال طلب المعاينة والمعدات",
             nav_home: "الرئيسية", nav_services: "الخدمات",
             nav_guide: "دليل الـ 7 نقاط", nav_about: "من نحن",
             nav_certifications: "الشهادات والاعتمادات", nav_articles: "المقالات",
@@ -1082,3 +1326,150 @@ document.addEventListener('DOMContentLoaded', () => {
     setLanguage(currentLang);
 
 }); // end DOMContentLoaded
+
+
+/* ================================================================
+   LASHING INTERACTIVE FUNCTIONS (Catalog Filter, PDF Viewer, Lightbox, Video Modal)
+   ================================================================ */
+
+// 1. Lashing Catalog Filtering
+document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('#lashing-filters .filter-btn');
+    const partCards = document.querySelectorAll('#parts-grid .part-card');
+
+    if (filterBtns.length > 0 && partCards.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                partCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    }
+
+    // 2. Lashing Request Form Handler
+    const lashingForm = document.getElementById('lashing-request-form');
+    if (lashingForm) {
+        lashingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = lashingForm.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.textContent = 'Submitting Request...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert('Thank you! Your Lashing Inquiry has been submitted successfully. A SeaLandX specialist will contact you shortly.');
+                lashingForm.reset();
+                btn.textContent = originalText;
+                btn.disabled = false;
+            }, 1000);
+        });
+    }
+});
+
+// 3. PDF Portfolio Slide Viewer Functions
+let currentPdfPage = 1;
+const totalPdfPages = 8;
+
+function setPdfPage(pageNum) {
+    if (pageNum < 1 || pageNum > totalPdfPages) return;
+    currentPdfPage = pageNum;
+    
+    const slideImg = document.getElementById('pdf-slide-img');
+    const pageNumDisplay = document.getElementById('current-page-num');
+    const thumbs = document.querySelectorAll('#pdf-thumbs .pdf-thumb');
+
+    if (slideImg) {
+        slideImg.style.opacity = '0';
+        setTimeout(() => {
+            slideImg.src = `assets/lashing/docs/portfolio_pages/portfolio_page_${pageNum}.jpg`;
+            slideImg.style.opacity = '1';
+        }, 150);
+    }
+    if (pageNumDisplay) pageNumDisplay.textContent = pageNum;
+
+    if (thumbs.length > 0) {
+        thumbs.forEach((t, i) => {
+            if (i + 1 === pageNum) {
+                t.classList.add('active');
+                t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            } else {
+                t.classList.remove('active');
+            }
+        });
+    }
+}
+
+function nextPdfPage() {
+    let next = currentPdfPage + 1;
+    if (next > totalPdfPages) next = 1;
+    setPdfPage(next);
+}
+
+function prevPdfPage() {
+    let prev = currentPdfPage - 1;
+    if (prev < 1) prev = totalPdfPages;
+    setPdfPage(prev);
+}
+
+// 4. Video Modal Functions
+function openVideoModal(videoSrc, title) {
+    const modal = document.getElementById('video-modal');
+    const videoEl = document.getElementById('modal-video-element');
+    const titleEl = document.getElementById('video-modal-title');
+
+    if (modal && videoEl) {
+        videoEl.src = videoSrc;
+        if (titleEl && title) titleEl.textContent = title;
+        modal.classList.remove('hidden');
+        videoEl.play().catch(e => console.log('Autoplay error:', e));
+    }
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('video-modal');
+    const videoEl = document.getElementById('modal-video-element');
+
+    if (modal && videoEl) {
+        videoEl.pause();
+        videoEl.src = '';
+        modal.classList.add('hidden');
+    }
+}
+
+// 5. Image Lightbox Functions
+function openLightbox(imgSrc, caption) {
+    const modal = document.getElementById('lightbox-modal');
+    const imgEl = document.getElementById('lightbox-img');
+    const captionEl = document.getElementById('lightbox-caption');
+
+    if (modal && imgEl) {
+        imgEl.src = imgSrc;
+        if (captionEl) captionEl.textContent = caption || '';
+        modal.classList.remove('hidden');
+    }
+}
+
+function closeLightbox() {
+    const modal = document.getElementById('lightbox-modal');
+    if (modal) {
+        modal.classList.add('hidden');
+    }
+}
+
+// Close modals on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeVideoModal();
+        closeLightbox();
+    }
+});
