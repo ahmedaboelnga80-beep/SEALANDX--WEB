@@ -1,3 +1,17 @@
+
+    // Global XSS & Input Sanitization Helper
+    window.escapeHTML = function(str) {
+        if (typeof str !== 'string') return '';
+        return str.replace(/[&<>"']/g, function(m) {
+            return {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            }[m];
+        });
+    };
 /**
  * SeaLandX — Optimized Core Interactions
  * =========================================

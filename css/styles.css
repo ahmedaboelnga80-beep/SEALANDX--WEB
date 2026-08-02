@@ -3065,3 +3065,91 @@ html[dir="rtl"] .partners-track {
 }
 
 
+
+
+/* ==========================================================================
+   LASHING PAGE RESPONSIVE & MOBILE DESIGN SYSTEM ENHANCEMENTS
+   ========================================================================== */
+.page-lashing {
+    overflow-x: hidden;
+}
+
+/* RTL Layout Enhancements for Arabic */
+[dir="rtl"] .page-lashing .hero-title,
+[dir="rtl"] .page-lashing .section-title,
+[dir="rtl"] .page-lashing .section-desc,
+[dir="rtl"] .page-lashing .about-text-content {
+    text-align: right;
+}
+
+[dir="rtl"] .page-lashing .info-checklist li span:first-child {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+/* Mobile Screens (< 768px) */
+@media (max-width: 768px) {
+    #lashing-hero {
+        padding: 90px 0 40px !important;
+    }
+    
+    #lashing-hero .hero-title {
+        font-size: 2rem !important;
+        line-height: 1.25 !important;
+    }
+
+    #lashing-hero .stats-card {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+        text-align: center;
+    }
+    
+    #lashing-hero .stat-divider {
+        display: none !important;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 0.9rem !important;
+        font-size: 0.8rem !important;
+    }
+
+    .pdf-viewer-container {
+        padding: 0.75rem !important;
+    }
+
+    .pdf-viewer-container > div:nth-child(2) {
+        height: 230px !important;
+    }
+
+    #portfolio-pdf .guide-wrapper {
+        grid-template-columns: 1fr !important;
+        padding: 1.5rem !important;
+        gap: 1.75rem !important;
+    }
+
+    .contact-form-container {
+        padding: 1.5rem !important;
+        border-radius: 16px !important;
+    }
+
+    .cert-modal-content {
+        width: 95% !important;
+        padding: 1rem !important;
+    }
+}
+
+/* Extra Small Screens (< 480px) */
+@media (max-width: 480px) {
+    #lashing-hero .hero-title {
+        font-size: 1.75rem !important;
+    }
+
+    .part-card .cert-body {
+        padding: 1rem !important;
+    }
+
+    .filter-btn {
+        flex: 1 1 45%;
+        text-align: center;
+    }
+}
