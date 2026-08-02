@@ -1823,13 +1823,14 @@ p {
     margin-bottom: 2rem;
 }
 
-/* --- Footer --- */
+/* --- Footer (Clean White Theme) --- */
 .main-footer {
-    background: #020406;
-    border-top: 1px solid var(--border-white);
+    background: #ffffff !important;
+    border-top: 1px solid #e2e8f0 !important;
     padding: 5rem 0 2rem;
     z-index: 10;
     position: relative;
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.02);
 }
 
 .footer-container {
@@ -1849,14 +1850,15 @@ p {
 }
 
 .footer-logo-img {
-    height: 36px;
+    height: 42px;
     margin-bottom: 1.25rem;
+    mix-blend-mode: multiply;
 }
 
 .brand-desc {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    line-height: 1.5;
+    font-size: 0.9rem;
+    color: #475569 !important;
+    line-height: 1.6;
 }
 
 .footer-col-links {
@@ -1865,9 +1867,9 @@ p {
 
 .footer-col-links h4,
 .footer-col-news h4 {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #0f172a !important;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 1.5rem;
@@ -1882,13 +1884,15 @@ p {
 
 .footer-col-links a {
     text-decoration: none;
-    color: var(--text-secondary);
-    font-size: 0.85rem;
+    color: #334155 !important;
+    font-size: 0.9rem;
+    font-weight: 500;
     transition: var(--transition-smooth);
 }
 
 .footer-col-links a:hover {
-    color: var(--neon-teal);
+    color: #007788 !important;
+    font-weight: 700;
     padding-inline-start: 4px;
 }
 
@@ -1897,9 +1901,9 @@ p {
 }
 
 .footer-col-news p {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    line-height: 1.5;
+    font-size: 0.9rem;
+    color: #475569 !important;
+    line-height: 1.6;
     margin-bottom: 1.25rem;
 }
 
@@ -1910,26 +1914,34 @@ p {
 
 .footer-news-form input {
     flex-grow: 1;
-    padding: 0.7rem 1rem;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.75rem 1.1rem;
+    background: #f8fafc !important;
+    border: 1.5px solid #cbd5e1 !important;
     border-radius: 20px;
-    color: #ffffff;
-    font-size: 0.85rem;
+    color: #0f172a !important;
+    font-size: 0.88rem;
     outline: none;
     transition: var(--transition-smooth);
 }
 
+.footer-news-form input::placeholder {
+    color: #94a3b8 !important;
+}
+
 .footer-news-form input:focus {
-    border-color: var(--neon-teal);
+    border-color: #007788 !important;
+    box-shadow: 0 0 10px rgba(0,119,136,0.15);
 }
 
 .footer-news-form .btn {
-    padding: 0.7rem 1.25rem;
+    padding: 0.75rem 1.4rem;
+    background: linear-gradient(135deg, #007788 0%, #004d5a 100%) !important;
+    color: #ffffff !important;
+    font-weight: 700;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid #e2e8f0 !important;
     padding-top: 2rem;
     display: flex;
     justify-content: space-between;
@@ -1937,8 +1949,8 @@ p {
 }
 
 .footer-bottom p {
-    font-size: 0.78rem;
-    color: var(--text-muted);
+    font-size: 0.82rem;
+    color: #64748b !important;
 }
 
 .footer-legal {
@@ -1949,17 +1961,18 @@ p {
 
 .footer-legal a {
     text-decoration: none;
-    color: var(--text-muted);
-    font-size: 0.78rem;
+    color: #64748b !important;
+    font-size: 0.82rem;
+    font-weight: 500;
     transition: var(--transition-smooth);
 }
 
 .footer-legal a:hover {
-    color: var(--neon-teal);
+    color: #007788 !important;
 }
 
 .footer-legal span {
-    color: rgba(255, 255, 255, 0.1);
+    color: #cbd5e1 !important;
 }
 
 /* --- Modals Lightboxes --- */
