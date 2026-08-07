@@ -165,9 +165,9 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_certifications: "Certifications", nav_articles: "Articles",
             nav_contact: "Contact Us", nav_title: "Navigation",
             btn_request: "Request Inspection",
-            hero_tag: "Marine Security Terminal",
-            hero_title: 'Precision Container & Cargo <br><span class="text-gradient">Logistics</span>',
-            hero_desc: "Streamlining supply chains and delivering value at every step with reliable, efficient, and tailored logistics solutions.",
+            hero_tag: "",
+            hero_title: 'PRECISED INTEGRATED <br><span class="text-gradient">LOGISTIC SERVICES</span>',
+            hero_desc: "YOUR TRUSTED PARTNER FOR EXCELLENT LOGISTICS SERVICES",
             srv_psi_title: "Container Inspection & Survey",
             srv_psi_desc: "Comprehensive pre-loading verification and container sealing.",
             srv_reefer_title: "Cargo Inspection & Survey",
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
             partners_desc: "We work with the world's leading shipping lines, port authorities, and logistics networks.",
             stat_containers: "Containers Inspected", stat_hours: "Hour Support Coverage",
             stat_compliance: "% Safety Compliance", stat_ports: "Major Ports Covered",
-            cert_tag: "Compliance & Quality", cert_title: "ISO Certified Logistics Services",
+            cert_tag: "Compliance & Quality", cert_title: "ISO Certified Integrated Management System",
             cert_desc: "SeaLandX operates under strict international standards to ensure quality, environmental safety, and occupational health across all logistics channels.",
             cert_click_view: "Click to View Certificate",
             cert_9001_title: "Quality Management System (QMS)", cert_9001_desc: "Standardizes processes to consistently deliver services that meet customer expectations and regulatory requirements.",
@@ -472,9 +472,9 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_certifications: "الشهادات والاعتمادات", nav_articles: "المقالات",
             nav_contact: "اتصل بنا", nav_title: "قائمة التصفح",
             btn_request: "طلب معاينة وفحص",
-            hero_tag: "بوابة الفحص والتدقيق الأمني البحري",
-            hero_title: 'معاينة وفحص دقيق <br><span class="text-gradient">للحاويات</span>',
-            hero_desc: "تبسيط سلاسل التوريد وتقديم القيمة في كل خطوة من خلال حلول لوجستية موثوقة وفعالة ومخصصة.",
+            hero_tag: "",
+            hero_title: 'خدمات لوجستية <br><span class="text-gradient">متكاملة ودقيقة</span>',
+            hero_desc: "شريكك الموثوق لخدمات لوجستية متميزة",
             srv_psi_title: "فحص ومعاينة الحاويات",
             srv_psi_desc: "تحقق شامل قبل التحميل وإحكام إغلاق الحاويات.",
             srv_reefer_title: "فحص ومعاينة الشحنات",
@@ -592,7 +592,7 @@ document.addEventListener('DOMContentLoaded', () => {
             partners_desc: "نحن نعمل مع خطوط الشحن الرائدة وهيئات الموانئ والشبكات اللوجستية العالمية.",
             stat_containers: "حاوية تم فحصها ومعاينتها", stat_hours: "ساعة تغطية الدعم الفني",
             stat_compliance: "نسبة الامتثال للأمان والسلامة", stat_ports: "ميناء تجاري مغطى بخدماتنا",
-            cert_tag: "الامتثال والجودة", cert_title: "خدمات لوجستية معتمدة من ISO",
+            cert_tag: "الامتثال والجودة", cert_title: "نظام إدارة متكامل معتمد بالأيزو ISO",
             cert_desc: "تعمل سي لاند إكس وفقاً لمعايير دولية صارمة لضمان الجودة، والسلامة البيئية، والصحة المهنية عبر جميع القنوات اللوجستية.",
             cert_click_view: "انقر لعرض الشهادة",
             cert_9001_title: "نظام إدارة الجودة (QMS)", cert_9001_desc: "يقوم بتوحيد العمليات لتقديم خدمات تلبي توقعات العملاء والمتطلبات التنظيمية باستمرار.",
@@ -1484,10 +1484,30 @@ function closeLightbox() {
     }
 }
 
+// Certificate Modal Viewer Functions
+window.openCertModal = function(imgSrc) {
+    const modal = document.getElementById('cert-modal');
+    const imgEl = document.getElementById('cert-modal-img');
+    if (modal && imgEl) {
+        imgEl.src = imgSrc;
+        modal.style.display = 'flex';
+        modal.classList.add('active');
+    }
+};
+
+window.closeCertModal = function() {
+    const modal = document.getElementById('cert-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        modal.classList.remove('active');
+    }
+};
+
 // Close modals on Escape key
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         closeVideoModal();
         closeLightbox();
+        closeCertModal();
     }
 });
