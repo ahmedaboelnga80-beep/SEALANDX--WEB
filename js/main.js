@@ -747,7 +747,10 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: '0px 0px -60px 0px'
     });
 
-    revealElements.forEach(el => revealObserver.observe(el));
+    revealElements.forEach(el => {
+        el.classList.add('is-visible');
+        revealObserver.observe(el);
+    });
 
     /* ================================================================
        4. CANVAS — Molecular Particle Scan (Chapter 5 / Rupture)

@@ -221,10 +221,10 @@ p {
     left: 0;
     width: 100%;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(6, 9, 14, 0.88);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--border-white);
+    border-bottom: 1px solid rgba(0, 242, 254, 0.15);
     padding: 0.8rem 0;
     transition: var(--transition-smooth);
 }
@@ -500,17 +500,20 @@ p {
     width: 100%;
 }
 
-/* --- CSS Scroll Reveal Animations (replaces GSAP) --- */
+/* --- CSS Scroll Reveal Animations --- */
 .reveal-on-scroll {
-    opacity: 0;
-    transform: translateY(32px);
+    opacity: 1;
+    transform: none;
     transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
                 transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.reveal-on-scroll.is-visible {
-    opacity: 1;
-    transform: translateY(0);
+:target,
+.service-detail-block,
+.reveal-on-scroll.is-visible,
+.reveal-layer.is-visible {
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 /* Stagger children inside a reveal parent */
