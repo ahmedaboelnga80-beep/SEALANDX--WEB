@@ -8,12 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css?v=2.5">
+    <link rel="stylesheet" href="css/styles.css?v=3.0">
     <!-- Security & Hardening Meta Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data: blob:; video-src 'self' https: data: blob:;">
+<script>
+    (function(){var t=localStorage.getItem('sealandx_theme')||'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -36,8 +39,7 @@
             </nav>
             <div class="header-right">
                 <button class="btn-theme" id="theme-toggle" aria-label="Toggle Theme Mode" title="Switch Light/Dark Mode">
-                    <span class="theme-icon-sun">☀️</span>
-                    <span class="theme-icon-moon">🌙</span>
+                    <span id="theme-toggle-label">🌙 Dark</span>
                 </button>
                 <button class="btn-lang" id="lang-toggle" aria-label="Switch Language">العربية</button>
                 <div class="header-cta">
@@ -268,6 +270,6 @@
 
     <div id="demo-indicator" class="demo-indicator-bar"></div>
     <div id="demo-badge" class="demo-active-badge">DEMO MODE ACTIVE</div>
-    <script src="js/main.js?v=2.5" defer></script>
+    <script src="js/main.js?v=3.0" defer></script>
 </body>
 </html>

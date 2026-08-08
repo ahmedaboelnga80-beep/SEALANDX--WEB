@@ -701,20 +701,25 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ================================================================
        THEME SYSTEM (LIGHT / DARK MODE TOGGLE)
        ================================================================ */
-    const savedTheme = localStorage.getItem('sealandx_theme') || 'light';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-
-    function setTheme(theme) {
+    function updateThemeUI(theme) {
         document.documentElement.setAttribute('data-theme', theme);
+        document.body.setAttribute('data-theme', theme);
         localStorage.setItem('sealandx_theme', theme);
+        const label = document.getElementById('theme-toggle-label');
+        if (label) {
+            label.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        }
     }
+
+    const savedTheme = localStorage.getItem('sealandx_theme') || 'light';
+    updateThemeUI(savedTheme);
 
     const themeBtn = document.getElementById('theme-toggle');
     if (themeBtn) {
         themeBtn.addEventListener('click', () => {
             const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
             const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            setTheme(nextTheme);
+            updateThemeUI(nextTheme);
         });
     }
 
