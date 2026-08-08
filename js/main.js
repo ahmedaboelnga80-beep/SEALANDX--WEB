@@ -1467,22 +1467,54 @@ function closeVideoModal() {
 // 5. Image Lightbox Functions
 function openLightbox(imgSrc, caption) {
     const modal = document.getElementById('lightbox-modal');
+// Video Modal Functions
+window.openVideoModal = function(src, title) {
+    const modal = document.getElementById('video-modal');
+    const videoEl = document.getElementById('modal-video-element');
+    const titleEl = document.getElementById('video-modal-title');
+
+    if (modal && videoEl) {
+        videoEl.src = src;
+        if (titleEl && title) titleEl.textContent = title;
+        modal.style.display = 'flex';
+        modal.classList.add('active');
+        videoEl.play().catch(e => console.log('Autoplay info:', e));
+    }
+};
+
+window.closeVideoModal = function() {
+    const modal = document.getElementById('video-modal');
+    const videoEl = document.getElementById('modal-video-element');
+
+    if (modal && videoEl) {
+        videoEl.pause();
+        videoEl.src = '';
+        modal.style.display = 'none';
+        modal.classList.remove('active');
+    }
+};
+
+// Image Lightbox Functions
+window.openLightbox = function(imgSrc, caption) {
+    const modal = document.getElementById('lightbox-modal');
     const imgEl = document.getElementById('lightbox-img');
     const captionEl = document.getElementById('lightbox-caption');
 
     if (modal && imgEl) {
         imgEl.src = imgSrc;
         if (captionEl) captionEl.textContent = caption || '';
-        modal.classList.remove('hidden');
+        modal.style.display = 'flex';
+        modal.classList.add('active');
     }
-}
+};
 
-function closeLightbox() {
+window.closeLightbox = function() {
     const modal = document.getElementById('lightbox-modal');
     if (modal) {
-        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        modal.classList.remove('active');
     }
-}
+};
 
 // Certificate Modal Viewer Functions
 window.openCertModal = function(imgSrc) {
@@ -1506,8 +1538,8 @@ window.closeCertModal = function() {
 // Close modals on Escape key
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-        closeVideoModal();
-        closeLightbox();
-        closeCertModal();
+        window.closeVideoModal();
+        window.closeLightbox();
+        window.closeCertModal();
     }
 });
