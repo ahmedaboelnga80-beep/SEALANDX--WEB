@@ -699,6 +699,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (langBtn) langBtn.addEventListener('click', () => setLanguage(currentLang === 'en' ? 'ar' : 'en'));
 
     /* ================================================================
+       THEME SYSTEM (LIGHT / DARK MODE TOGGLE)
+       ================================================================ */
+    const savedTheme = localStorage.getItem('sealandx_theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('sealandx_theme', theme);
+    }
+
+    const themeBtn = document.getElementById('theme-toggle');
+    if (themeBtn) {
+        themeBtn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+            const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(nextTheme);
+        });
+    }
+
+    /* ================================================================
        2. INTERSECTION OBSERVER — Video Autoplay on Viewport Entry
           (replaces GSAP ScrollTrigger — ~0 CPU vs ~30% CPU)
        ================================================================ */
