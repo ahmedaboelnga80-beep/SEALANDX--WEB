@@ -1465,10 +1465,7 @@ function closeVideoModal() {
     }
 }
 
-// 5. Image Lightbox Functions
-function openLightbox(imgSrc, caption) {
-    const modal = document.getElementById('lightbox-modal');
-// Video Modal Functions
+// Modal & Lightbox Global Functions
 window.openVideoModal = function(src, title) {
     const modal = document.getElementById('video-modal');
     const videoEl = document.getElementById('modal-video-element');
@@ -1495,7 +1492,6 @@ window.closeVideoModal = function() {
     }
 };
 
-// Image Lightbox Functions
 window.openLightbox = function(imgSrc, caption) {
     const modal = document.getElementById('lightbox-modal');
     const imgEl = document.getElementById('lightbox-img');
@@ -1517,7 +1513,6 @@ window.closeLightbox = function() {
     }
 };
 
-// Certificate Modal Viewer Functions
 window.openCertModal = function(imgSrc) {
     const modal = document.getElementById('cert-modal');
     const imgEl = document.getElementById('cert-modal-img');
