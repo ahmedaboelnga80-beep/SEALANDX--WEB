@@ -9,30 +9,30 @@
 
 /* --- Design Tokens --- */
 :root {
-    --bg-main: #ffffff;
-    --bg-sec: #f4f7fb;
-    --bg-card: rgba(255, 255, 255, 0.75);
-    --border-glass: rgba(0, 180, 200, 0.18);
-    --border-glass-hover: rgba(0, 180, 200, 0.4);
-    --border-white: rgba(0, 0, 0, 0.06);
+    --bg-main: #06090e;
+    --bg-sec: #0b111e;
+    --bg-card: rgba(15, 23, 42, 0.75);
+    --border-glass: rgba(0, 242, 254, 0.18);
+    --border-glass-hover: rgba(0, 242, 254, 0.4);
+    --border-white: rgba(255, 255, 255, 0.1);
 
-    --neon-teal: #0099b8;
-    --neon-blue: #004e64;
-    --neon-green: #00a96e;
+    --neon-teal: #00f2fe;
+    --neon-blue: #4364f7;
+    --neon-green: #00ff87;
     --neon-mint: #00c9a7;
-    --neon-orange: #e87c2e;
+    --neon-orange: #ff7a00;
 
-    --text-primary: #0f1923;
-    --text-secondary: #4a5568;
-    --text-muted: #718096;
+    --text-primary: #ffffff;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
 
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
     --font-mono: 'Space Mono', 'Courier New', monospace;
 
     --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    --glow-teal: 0 0 25px rgba(0, 153, 184, 0.18);
-    --glow-green: 0 0 25px rgba(0, 169, 110, 0.18);
+    --glow-teal: 0 0 25px rgba(0, 242, 254, 0.25);
+    --glow-green: 0 0 25px rgba(0, 255, 135, 0.25);
 
     --translate-dir: 6px;
 }
